@@ -14,7 +14,6 @@
       "ESNext", "DOM"
     ],
     "allowSyntheticDefaultImports": true,
-    "outDir": "./icons",
   },
   "exclude": [
     "node_modules"

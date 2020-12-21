@@ -1,3 +1,0 @@
-<svg class="icon" width="200" height="200" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-    <path fill="#333" d="M128 64h384v64H192v768h640V384h64v576H128V64zm384 0l384 320H512V64zm64 136.704V320h143.168L576 200.704zM256 768v-64h512v64H256zm0-192v-64h512v64H256z"/>
-</svg>

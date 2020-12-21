@@ -1,14 +1,14 @@
 <template>
   <div>
-    <test-icon />
+    <add-location style="width: 36px; height: 36px;"/>
   </div>
 </template>
 
 <script lang="ts">
-import TestIcon from '../packages/test-icon'
+import { AddLocation } from '../packages/element-plus-icons'
 export default {
   components: {
-    [TestIcon.displayName]: TestIcon,
+    [AddLocation.displayName]: AddLocation,
   }
 }
 

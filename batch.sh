@@ -1,47 +1,42 @@
 #! /usr/bin/bash
 
 gen(){
-  # echo $1
+
+BASE_NAME="$(basename -- ${1} | cut -d '.' -f 1 )"
+filename="$(echo $BASE_NAME | sed 's/[_|-]\([a-z]\)/\ \1/g;s/^\([a-z]\)/\ \1/g')"
 p="$(cat ${1} | grep -o -E "d=\"(.+)\"" | cut -d '"' -f 2)"
-# echo $p
-filename="$(basename -- ${1} | cut -d '.' -f 1)"
-mkdir "packages/$filename"
-cat << EOF > "packages/$filename/index.ts"
+normalized=""
+for name in $filename;
+do
+  c="$(echo "${name:0:1}" | tr "[:lower:]" "[:upper:]")"
+  normalized="${normalized}${c}${name:1}"
+done
+cat << EOF > "packages/components/${BASE_NAME}.ts"
 import { h } from 'vue'
 import Icon from '../icon'
 
 import type { FunctionalComponent } from 'vue'
-const d = '$2'
+const d = '${p}'
 
-const TestIcon = function (props: any) {
+const ${normalized} = function (props: any) {
   return h(
     Icon,
-    { 
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 1024 1024',
-      ...props,
-    },
+    props,
     {
       default: () => h('path', { d }, null),
     },
   );
 } as FunctionalComponent;
 
-TestIcon.displayName = '$filename';
+${normalized}.displayName = '${normalized}';
 
-export default $filename;
+export default ${normalized};
 
 EOF
-
+echo "export { default as ${normalized} } from '../components/${BASE_NAME}'" >> packages/element-plus-icons/index.ts
 }
 
 export -f gen
-find . -name *.svg | xargs -I {} bash -c 'gen "$@"' _ {}
 
-# for FILE_NAME in "$(; do
-# echo $FILE_NAME
-
-#   # p="$(cat ${FILE_NAME} | grep -o -E "d=\"(.+)\"" | cut -d '"' -f 2)"
-#   # filename="$(basename -- ${FILE_NAME} | cut -d '.' -f 1)"
-#   # generate $filename $p
-# done
+# gen ./v2/add-location.svg in case you want to use it directly
+find . -name *.svg | sort | xargs -I {} bash -c 'gen "$@"' _ {}

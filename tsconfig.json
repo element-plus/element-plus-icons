@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "noLib": false,
+    "target": "es6",
+    "sourceMap": true,
+    "lib": [
+      "ESNext", "DOM"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./icons",
+  },
+  "exclude": [
+    "node_modules"
+  ],
+ }
+ 

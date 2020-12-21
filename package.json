@@ -1,0 +1,15 @@
+{
+  "name": "element-plus-icon",
+  "version": "0.0.1",
+  "scripts": {
+    "serve": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.2",
+    "svgo": "^1.3.2",
+    "typescript": "^4.1.3",
+    "vite": "^1.0.0-rc.13",
+    "vue": "^3.0.3"
+  }
+}

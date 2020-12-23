@@ -29,11 +29,14 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Install dependencies
         run: yarn
+      - name: Get version
+        run: echo "TAG_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Publish
         run: yarn pub
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
-
+          TAG_VERSION: ${{env.TAG_VERSION}}
+          REGISTRY: https://registry.npmjs.org/
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
@@ -45,7 +48,11 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - name: Install dependencies
         run: yarn
+      - name: Get version
+        run: echo "TAG_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Publishing
         run: yarn pub
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          TAG_VERSION: ${{env.TAG_VERSION}}
+          REGISTRY: https://npm.pkg.github.com/

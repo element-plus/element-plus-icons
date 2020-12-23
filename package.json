@@ -1,10 +1,11 @@
 {
-  "name": "element-plus-icon",
-  "version": "0.0.1",
+  "name": "@element-plus/icons",
+  "version": "0.0.2",
   "scripts": {
     "serve": "vite",
     "build": "node ./rollup.js",
-    "generate": "sh ./batch.sh"
+    "generate": "sh ./batch.sh",
+    "pub": "sh ./publish.sh"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.2",

@@ -29,8 +29,8 @@ export default defineComponent({
           {
             xmlns: "http://www.w3.org/2000/svg",
             viewBox: "0 0 1024 1024",
-            width: '24px',
-            height: '24px',
+            width: '1rem',
+            height: '1rem',
             ...rest,
           },
           defaultSlot

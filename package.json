@@ -1,11 +1,16 @@
 {
   "name": "@element-plus/icons",
   "version": "0.0.2",
+  "main": "./lib/index.js",
+  "main:umd": "./lib/index.js",
+  "module": "./es/index.js",
+  "unpkg": "./lib/index.min.js",
+  "sideEffects": false,
+  "types": "./lib/index.d.ts",
   "scripts": {
     "serve": "vite",
-    "build": "node ./rollup.js",
-    "generate": "sh ./batch.sh",
-    "pub": "sh ./publish.sh"
+    "generate": "sh ./scripts/batch.sh",
+    "pub": "sh ./scripts/publish.sh"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.2",

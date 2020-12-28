@@ -33,10 +33,12 @@ ${normalized}.displayName = '${normalized}';
 export default ${normalized};
 
 EOF
-echo "export { default as ${normalized} } from '../components/${BASE_NAME}'" >> packages/element-plus-icons/index.ts
+echo "export { default as ${normalized} } from './components/${BASE_NAME}'" >> packages/index.ts
 }
 
 export -f gen
 
 # gen ./v2/add-location.svg in case you want to use it directly
 find . -name *.svg | sort | xargs -I {} bash -c 'gen "$@"' _ {}
+
+echo "export { default as Icon } from './icon'" >> packages/index.ts

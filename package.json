@@ -9,12 +9,14 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "serve": "vite",
-    "generate": "sh ./scripts/batch.sh",
-    "pub": "sh ./scripts/publish.sh"
+    "generate": "sh ./scripts/batch.sh && yarn prettier",
+    "pub": "sh ./scripts/publish.sh",
+    "prettier": "prettier ./packages -w"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.2",
     "esbuild": "^0.8.26",
+    "prettier": "^2.2.1",
     "rollup": "^2.35.1",
     "rollup-plugin-esbuild": "^2.6.1",
     "rollup-plugin-terser": "^7.0.2",

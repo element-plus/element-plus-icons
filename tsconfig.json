@@ -10,13 +10,8 @@
     "noLib": false,
     "target": "es6",
     "sourceMap": true,
-    "lib": [
-      "ESNext", "DOM"
-    ],
-    "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext", "DOM"],
+    "allowSyntheticDefaultImports": true
   },
-  "exclude": [
-    "node_modules"
-  ],
- }
- 
+  "exclude": ["node_modules"]
+}

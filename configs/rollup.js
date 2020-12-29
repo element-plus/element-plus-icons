@@ -38,9 +38,9 @@ rollup
   })
   .then(async (bundle) => {
     await Promise.all([
-      bundle.write(esm),
+      // bundle.write(esm),
       bundle.write(cjs),
-      bundle.write(minified),
+      // bundle.write(minified),
     ]);
     console.log("full bundle built success");
   });

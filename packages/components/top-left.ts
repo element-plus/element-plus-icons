@@ -1,5 +1,5 @@
 import { h } from 'vue'
-import Icon from '../icon'
+import Icon from '../icon/icon'
 
 import type { FunctionalComponent } from 'vue'
 const d = 'M256 256h416a32 32 0 100-64H224a32 32 0 00-32 32v448a32 32 0 0064 0V256z'

@@ -13,7 +13,7 @@ do
 done
 cat << EOF > "packages/components/${BASE_NAME}.ts"
 import { h } from 'vue'
-import Icon from '../icon'
+import Icon from '../icon/icon'
 
 import type { FunctionalComponent } from 'vue'
 const d = '${p}'

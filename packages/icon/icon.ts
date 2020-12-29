@@ -1,6 +1,6 @@
-import { defineComponent, h, renderSlot } from "vue";
+import { defineComponent, h, renderSlot } from 'vue'
 
-import type { CSSProperties, PropType, DefineComponent } from "vue";
+import type { CSSProperties, PropType, DefineComponent } from 'vue'
 
 // per description here classic components will have no overhead
 // compared to functional components, we can use it directly
@@ -19,21 +19,21 @@ export default defineComponent({
     },
   },
   render() {
-    const { $slots, raw, ...rest } = this;
+    const { $slots, raw, ...rest } = this
 
-    const defaultSlot = [renderSlot($slots, "default", {}, () => [])];
+    const defaultSlot = [renderSlot($slots, 'default', {}, () => [])]
     return raw
       ? h(raw, rest, defaultSlot)
       : h(
-          "svg",
+          'svg',
           {
-            xmlns: "http://www.w3.org/2000/svg",
-            viewBox: "0 0 1024 1024",
+            xmlns: 'http://www.w3.org/2000/svg',
+            viewBox: '0 0 1024 1024',
             width: '1rem',
             height: '1rem',
             ...rest,
           },
-          defaultSlot
-        );
+          defaultSlot,
+        )
   },
-});
+})

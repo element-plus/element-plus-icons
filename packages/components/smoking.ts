@@ -2,19 +2,31 @@ import { h } from 'vue'
 import Icon from '../icon/icon'
 
 import type { FunctionalComponent } from 'vue'
-const d = 'M256 576v128h640V576H256zm-32-64h704a32 32 0 0132 32v192a32 32 0 01-32 32H224a32 32 0 01-32-32V544a32 32 0 0132-32z'
 
 const Smoking = function (props: any) {
-  return h(
-    Icon,
-    props,
-    {
-      default: () => h('path', { d }, null),
-    },
-  );
-} as FunctionalComponent;
+  return h(Icon, props, {
+    default: () => [
+      h(
+        'path',
+        {
+          d:
+            'M256 576v128h640V576H256zm-32-64h704a32 32 0 0132 32v192a32 32 0 01-32 32H224a32 32 0 01-32-32V544a32 32 0 0132-32z',
+        },
+        null,
+      ),
 
-Smoking.displayName = 'Smoking';
+      h(
+        'path',
+        {
+          d:
+            'M704 576h64v128h-64zM256 64h64v320h-64zM128 192h64v192h-64zM64 512h64v256H64z',
+        },
+        null,
+      ),
+    ],
+  })
+} as FunctionalComponent
 
-export default Smoking;
+Smoking.displayName = 'Smoking'
 
+export default Smoking

@@ -18,6 +18,6 @@ const Download = function (props: any) {
   })
 } as FunctionalComponent
 
-Download.displayName = 'Download'
+Download.displayName = 'ElIconDownload'
 
 export default Download

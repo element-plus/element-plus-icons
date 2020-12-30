@@ -27,6 +27,6 @@ const CircleCheck = function (props: any) {
   })
 } as FunctionalComponent
 
-CircleCheck.displayName = 'CircleCheck'
+CircleCheck.displayName = 'ElIconCircleCheck'
 
 export default CircleCheck

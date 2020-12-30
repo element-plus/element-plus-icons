@@ -18,6 +18,6 @@ const Service = function (props: any) {
   })
 } as FunctionalComponent
 
-Service.displayName = 'Service'
+Service.displayName = 'ElIconService'
 
 export default Service

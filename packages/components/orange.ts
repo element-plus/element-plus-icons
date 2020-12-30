@@ -18,6 +18,6 @@ const Orange = function (props: any) {
   })
 } as FunctionalComponent
 
-Orange.displayName = 'Orange'
+Orange.displayName = 'ElIconOrange'
 
 export default Orange

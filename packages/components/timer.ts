@@ -36,6 +36,6 @@ const Timer = function (props: any) {
   })
 } as FunctionalComponent
 
-Timer.displayName = 'Timer'
+Timer.displayName = 'ElIconTimer'
 
 export default Timer

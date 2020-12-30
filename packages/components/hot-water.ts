@@ -18,6 +18,6 @@ const HotWater = function (props: any) {
   })
 } as FunctionalComponent
 
-HotWater.displayName = 'HotWater'
+HotWater.displayName = 'ElIconHotWater'
 
 export default HotWater

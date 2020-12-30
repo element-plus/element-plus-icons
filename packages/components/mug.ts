@@ -18,6 +18,6 @@ const Mug = function (props: any) {
   })
 } as FunctionalComponent
 
-Mug.displayName = 'Mug'
+Mug.displayName = 'ElIconMug'
 
 export default Mug

@@ -18,6 +18,6 @@ const InfoFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-InfoFilled.displayName = 'InfoFilled'
+InfoFilled.displayName = 'ElIconInfoFilled'
 
 export default InfoFilled

@@ -18,6 +18,6 @@ const Sort = function (props: any) {
   })
 } as FunctionalComponent
 
-Sort.displayName = 'Sort'
+Sort.displayName = 'ElIconSort'
 
 export default Sort

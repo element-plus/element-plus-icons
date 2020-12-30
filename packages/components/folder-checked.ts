@@ -18,6 +18,6 @@ const FolderChecked = function (props: any) {
   })
 } as FunctionalComponent
 
-FolderChecked.displayName = 'FolderChecked'
+FolderChecked.displayName = 'ElIconFolderChecked'
 
 export default FolderChecked

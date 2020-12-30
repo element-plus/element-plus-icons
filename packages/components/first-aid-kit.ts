@@ -27,6 +27,6 @@ const FirstAidKit = function (props: any) {
   })
 } as FunctionalComponent
 
-FirstAidKit.displayName = 'FirstAidKit'
+FirstAidKit.displayName = 'ElIconFirstAidKit'
 
 export default FirstAidKit

@@ -18,6 +18,6 @@ const Select = function (props: any) {
   })
 } as FunctionalComponent
 
-Select.displayName = 'Select'
+Select.displayName = 'ElIconSelect'
 
 export default Select

@@ -20,6 +20,6 @@ const Remove = function (props: any) {
   })
 } as FunctionalComponent
 
-Remove.displayName = 'Remove'
+Remove.displayName = 'ElIconRemove'
 
 export default Remove

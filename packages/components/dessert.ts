@@ -18,6 +18,6 @@ const Dessert = function (props: any) {
   })
 } as FunctionalComponent
 
-Dessert.displayName = 'Dessert'
+Dessert.displayName = 'ElIconDessert'
 
 export default Dessert

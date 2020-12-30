@@ -18,6 +18,6 @@ const Refresh = function (props: any) {
   })
 } as FunctionalComponent
 
-Refresh.displayName = 'Refresh'
+Refresh.displayName = 'ElIconRefresh'
 
 export default Refresh

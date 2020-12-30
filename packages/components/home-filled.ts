@@ -15,6 +15,6 @@ const HomeFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-HomeFilled.displayName = 'HomeFilled'
+HomeFilled.displayName = 'ElIconHomeFilled'
 
 export default HomeFilled

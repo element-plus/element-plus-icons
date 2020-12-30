@@ -18,6 +18,6 @@ const Apple = function (props: any) {
   })
 } as FunctionalComponent
 
-Apple.displayName = 'Apple'
+Apple.displayName = 'ElIconApple'
 
 export default Apple

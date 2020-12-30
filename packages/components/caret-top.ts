@@ -9,6 +9,6 @@ const CaretTop = function (props: any) {
   })
 } as FunctionalComponent
 
-CaretTop.displayName = 'CaretTop'
+CaretTop.displayName = 'ElIconCaretTop'
 
 export default CaretTop

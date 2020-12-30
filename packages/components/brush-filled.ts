@@ -18,6 +18,6 @@ const BrushFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-BrushFilled.displayName = 'BrushFilled'
+BrushFilled.displayName = 'ElIconBrushFilled'
 
 export default BrushFilled

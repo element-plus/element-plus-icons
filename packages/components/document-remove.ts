@@ -18,6 +18,6 @@ const DocumentRemove = function (props: any) {
   })
 } as FunctionalComponent
 
-DocumentRemove.displayName = 'DocumentRemove'
+DocumentRemove.displayName = 'ElIconDocumentRemove'
 
 export default DocumentRemove

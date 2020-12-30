@@ -42,6 +42,6 @@ const Present = function (props: any) {
   })
 } as FunctionalComponent
 
-Present.displayName = 'Present'
+Present.displayName = 'ElIconPresent'
 
 export default Present

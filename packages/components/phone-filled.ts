@@ -18,6 +18,6 @@ const PhoneFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-PhoneFilled.displayName = 'PhoneFilled'
+PhoneFilled.displayName = 'ElIconPhoneFilled'
 
 export default PhoneFilled

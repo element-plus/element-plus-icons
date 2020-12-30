@@ -18,6 +18,6 @@ const MoreFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-MoreFilled.displayName = 'MoreFilled'
+MoreFilled.displayName = 'ElIconMoreFilled'
 
 export default MoreFilled

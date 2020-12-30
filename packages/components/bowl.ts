@@ -18,6 +18,6 @@ const Bowl = function (props: any) {
   })
 } as FunctionalComponent
 
-Bowl.displayName = 'Bowl'
+Bowl.displayName = 'ElIconBowl'
 
 export default Bowl

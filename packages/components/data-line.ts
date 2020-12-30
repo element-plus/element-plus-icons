@@ -18,6 +18,6 @@ const DataLine = function (props: any) {
   })
 } as FunctionalComponent
 
-DataLine.displayName = 'DataLine'
+DataLine.displayName = 'ElIconDataLine'
 
 export default DataLine

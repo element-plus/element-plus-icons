@@ -15,6 +15,6 @@ const DCaret = function (props: any) {
   })
 } as FunctionalComponent
 
-DCaret.displayName = 'DCaret'
+DCaret.displayName = 'ElIconDCaret'
 
 export default DCaret

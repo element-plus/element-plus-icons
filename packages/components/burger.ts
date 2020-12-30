@@ -18,6 +18,6 @@ const Burger = function (props: any) {
   })
 } as FunctionalComponent
 
-Burger.displayName = 'Burger'
+Burger.displayName = 'ElIconBurger'
 
 export default Burger

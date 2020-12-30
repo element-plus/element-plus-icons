@@ -27,6 +27,6 @@ const Stopwatch = function (props: any) {
   })
 } as FunctionalComponent
 
-Stopwatch.displayName = 'Stopwatch'
+Stopwatch.displayName = 'ElIconStopwatch'
 
 export default Stopwatch

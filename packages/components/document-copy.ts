@@ -18,6 +18,6 @@ const DocumentCopy = function (props: any) {
   })
 } as FunctionalComponent
 
-DocumentCopy.displayName = 'DocumentCopy'
+DocumentCopy.displayName = 'ElIconDocumentCopy'
 
 export default DocumentCopy

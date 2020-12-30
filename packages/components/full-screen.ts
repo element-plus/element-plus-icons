@@ -18,6 +18,6 @@ const FullScreen = function (props: any) {
   })
 } as FunctionalComponent
 
-FullScreen.displayName = 'FullScreen'
+FullScreen.displayName = 'ElIconFullScreen'
 
 export default FullScreen

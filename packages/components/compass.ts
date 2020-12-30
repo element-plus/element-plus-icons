@@ -27,6 +27,6 @@ const Compass = function (props: any) {
   })
 } as FunctionalComponent
 
-Compass.displayName = 'Compass'
+Compass.displayName = 'ElIconCompass'
 
 export default Compass

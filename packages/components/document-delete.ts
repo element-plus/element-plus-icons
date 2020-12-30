@@ -18,6 +18,6 @@ const DocumentDelete = function (props: any) {
   })
 } as FunctionalComponent
 
-DocumentDelete.displayName = 'DocumentDelete'
+DocumentDelete.displayName = 'ElIconDocumentDelete'
 
 export default DocumentDelete

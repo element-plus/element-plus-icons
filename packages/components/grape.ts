@@ -18,6 +18,6 @@ const Grape = function (props: any) {
   })
 } as FunctionalComponent
 
-Grape.displayName = 'Grape'
+Grape.displayName = 'ElIconGrape'
 
 export default Grape

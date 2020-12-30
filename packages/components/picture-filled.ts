@@ -18,6 +18,6 @@ const PictureFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-PictureFilled.displayName = 'PictureFilled'
+PictureFilled.displayName = 'ElIconPictureFilled'
 
 export default PictureFilled

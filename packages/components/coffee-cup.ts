@@ -18,6 +18,6 @@ const CoffeeCup = function (props: any) {
   })
 } as FunctionalComponent
 
-CoffeeCup.displayName = 'CoffeeCup'
+CoffeeCup.displayName = 'ElIconCoffeeCup'
 
 export default CoffeeCup

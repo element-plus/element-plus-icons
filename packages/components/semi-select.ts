@@ -15,6 +15,6 @@ const SemiSelect = function (props: any) {
   })
 } as FunctionalComponent
 
-SemiSelect.displayName = 'SemiSelect'
+SemiSelect.displayName = 'ElIconSemiSelect'
 
 export default SemiSelect

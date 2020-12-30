@@ -18,6 +18,6 @@ const DArrowLeft = function (props: any) {
   })
 } as FunctionalComponent
 
-DArrowLeft.displayName = 'DArrowLeft'
+DArrowLeft.displayName = 'ElIconDArrowLeft'
 
 export default DArrowLeft

@@ -18,6 +18,6 @@ const StarFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-StarFilled.displayName = 'StarFilled'
+StarFilled.displayName = 'ElIconStarFilled'
 
 export default StarFilled

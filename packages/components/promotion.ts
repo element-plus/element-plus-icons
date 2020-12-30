@@ -18,6 +18,6 @@ const Promotion = function (props: any) {
   })
 } as FunctionalComponent
 
-Promotion.displayName = 'Promotion'
+Promotion.displayName = 'ElIconPromotion'
 
 export default Promotion

@@ -18,6 +18,6 @@ const Pouring = function (props: any) {
   })
 } as FunctionalComponent
 
-Pouring.displayName = 'Pouring'
+Pouring.displayName = 'ElIconPouring'
 
 export default Pouring

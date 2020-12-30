@@ -18,6 +18,6 @@ const ShoppingCart = function (props: any) {
   })
 } as FunctionalComponent
 
-ShoppingCart.displayName = 'ShoppingCart'
+ShoppingCart.displayName = 'ElIconShoppingCart'
 
 export default ShoppingCart

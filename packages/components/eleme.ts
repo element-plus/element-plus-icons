@@ -18,6 +18,6 @@ const Eleme = function (props: any) {
   })
 } as FunctionalComponent
 
-Eleme.displayName = 'Eleme'
+Eleme.displayName = 'ElIconEleme'
 
 export default Eleme

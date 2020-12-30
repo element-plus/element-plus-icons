@@ -33,6 +33,6 @@ const Bell = function (props: any) {
   })
 } as FunctionalComponent
 
-Bell.displayName = 'Bell'
+Bell.displayName = 'ElIconBell'
 
 export default Bell

@@ -27,6 +27,6 @@ const MapLocation = function (props: any) {
   })
 } as FunctionalComponent
 
-MapLocation.displayName = 'MapLocation'
+MapLocation.displayName = 'ElIconMapLocation'
 
 export default MapLocation

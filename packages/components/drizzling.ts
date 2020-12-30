@@ -18,6 +18,6 @@ const Drizzling = function (props: any) {
   })
 } as FunctionalComponent
 
-Drizzling.displayName = 'Drizzling'
+Drizzling.displayName = 'ElIconDrizzling'
 
 export default Drizzling

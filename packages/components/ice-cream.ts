@@ -18,6 +18,6 @@ const IceCream = function (props: any) {
   })
 } as FunctionalComponent
 
-IceCream.displayName = 'IceCream'
+IceCream.displayName = 'ElIconIceCream'
 
 export default IceCream

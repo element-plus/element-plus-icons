@@ -18,6 +18,6 @@ const Histogram = function (props: any) {
   })
 } as FunctionalComponent
 
-Histogram.displayName = 'Histogram'
+Histogram.displayName = 'ElIconHistogram'
 
 export default Histogram

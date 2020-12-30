@@ -20,6 +20,6 @@ const Reading = function (props: any) {
   })
 } as FunctionalComponent
 
-Reading.displayName = 'Reading'
+Reading.displayName = 'ElIconReading'
 
 export default Reading

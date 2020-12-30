@@ -18,6 +18,6 @@ const VideoPlay = function (props: any) {
   })
 } as FunctionalComponent
 
-VideoPlay.displayName = 'VideoPlay'
+VideoPlay.displayName = 'ElIconVideoPlay'
 
 export default VideoPlay

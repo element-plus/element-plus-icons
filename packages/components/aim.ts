@@ -27,6 +27,6 @@ const Aim = function (props: any) {
   })
 } as FunctionalComponent
 
-Aim.displayName = 'Aim'
+Aim.displayName = 'ElIconAim'
 
 export default Aim

@@ -18,6 +18,6 @@ const Moon = function (props: any) {
   })
 } as FunctionalComponent
 
-Moon.displayName = 'Moon'
+Moon.displayName = 'ElIconMoon'
 
 export default Moon

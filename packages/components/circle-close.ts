@@ -27,6 +27,6 @@ const CircleClose = function (props: any) {
   })
 } as FunctionalComponent
 
-CircleClose.displayName = 'CircleClose'
+CircleClose.displayName = 'ElIconCircleClose'
 
 export default CircleClose

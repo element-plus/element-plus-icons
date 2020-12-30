@@ -18,6 +18,6 @@ const Sunrise = function (props: any) {
   })
 } as FunctionalComponent
 
-Sunrise.displayName = 'Sunrise'
+Sunrise.displayName = 'ElIconSunrise'
 
 export default Sunrise

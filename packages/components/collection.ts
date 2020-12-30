@@ -27,6 +27,6 @@ const Collection = function (props: any) {
   })
 } as FunctionalComponent
 
-Collection.displayName = 'Collection'
+Collection.displayName = 'ElIconCollection'
 
 export default Collection

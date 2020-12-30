@@ -18,6 +18,6 @@ const FolderDelete = function (props: any) {
   })
 } as FunctionalComponent
 
-FolderDelete.displayName = 'FolderDelete'
+FolderDelete.displayName = 'ElIconFolderDelete'
 
 export default FolderDelete

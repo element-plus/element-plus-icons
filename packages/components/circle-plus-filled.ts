@@ -18,6 +18,6 @@ const CirclePlusFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-CirclePlusFilled.displayName = 'CirclePlusFilled'
+CirclePlusFilled.displayName = 'ElIconCirclePlusFilled'
 
 export default CirclePlusFilled

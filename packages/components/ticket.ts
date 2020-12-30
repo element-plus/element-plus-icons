@@ -18,6 +18,6 @@ const Ticket = function (props: any) {
   })
 } as FunctionalComponent
 
-Ticket.displayName = 'Ticket'
+Ticket.displayName = 'ElIconTicket'
 
 export default Ticket

@@ -27,6 +27,6 @@ const Lightning = function (props: any) {
   })
 } as FunctionalComponent
 
-Lightning.displayName = 'Lightning'
+Lightning.displayName = 'ElIconLightning'
 
 export default Lightning

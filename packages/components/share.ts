@@ -18,6 +18,6 @@ const Share = function (props: any) {
   })
 } as FunctionalComponent
 
-Share.displayName = 'Share'
+Share.displayName = 'ElIconShare'
 
 export default Share

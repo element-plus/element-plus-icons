@@ -36,6 +36,6 @@ const Odometer = function (props: any) {
   })
 } as FunctionalComponent
 
-Odometer.displayName = 'Odometer'
+Odometer.displayName = 'ElIconOdometer'
 
 export default Odometer

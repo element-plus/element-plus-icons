@@ -18,6 +18,6 @@ const Ship = function (props: any) {
   })
 } as FunctionalComponent
 
-Ship.displayName = 'Ship'
+Ship.displayName = 'ElIconShip'
 
 export default Ship

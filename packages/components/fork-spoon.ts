@@ -18,6 +18,6 @@ const ForkSpoon = function (props: any) {
   })
 } as FunctionalComponent
 
-ForkSpoon.displayName = 'ForkSpoon'
+ForkSpoon.displayName = 'ElIconForkSpoon'
 
 export default ForkSpoon

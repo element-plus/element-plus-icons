@@ -30,6 +30,6 @@ const Female = function (props: any) {
   })
 } as FunctionalComponent
 
-Female.displayName = 'Female'
+Female.displayName = 'ElIconFemale'
 
 export default Female

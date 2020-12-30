@@ -18,6 +18,6 @@ const Soccer = function (props: any) {
   })
 } as FunctionalComponent
 
-Soccer.displayName = 'Soccer'
+Soccer.displayName = 'ElIconSoccer'
 
 export default Soccer

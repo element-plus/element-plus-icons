@@ -27,6 +27,6 @@ const Crop = function (props: any) {
   })
 } as FunctionalComponent
 
-Crop.displayName = 'Crop'
+Crop.displayName = 'ElIconCrop'
 
 export default Crop

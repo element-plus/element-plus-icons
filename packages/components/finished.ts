@@ -18,6 +18,6 @@ const Finished = function (props: any) {
   })
 } as FunctionalComponent
 
-Finished.displayName = 'Finished'
+Finished.displayName = 'ElIconFinished'
 
 export default Finished

@@ -20,6 +20,6 @@ const Back = function (props: any) {
   })
 } as FunctionalComponent
 
-Back.displayName = 'Back'
+Back.displayName = 'ElIconBack'
 
 export default Back

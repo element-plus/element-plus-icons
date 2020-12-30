@@ -18,6 +18,6 @@ const DocumentAdd = function (props: any) {
   })
 } as FunctionalComponent
 
-DocumentAdd.displayName = 'DocumentAdd'
+DocumentAdd.displayName = 'ElIconDocumentAdd'
 
 export default DocumentAdd

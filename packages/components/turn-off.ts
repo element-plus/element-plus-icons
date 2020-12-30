@@ -27,6 +27,6 @@ const TurnOff = function (props: any) {
   })
 } as FunctionalComponent
 
-TurnOff.displayName = 'TurnOff'
+TurnOff.displayName = 'ElIconTurnOff'
 
 export default TurnOff

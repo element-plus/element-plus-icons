@@ -18,6 +18,6 @@ const Files = function (props: any) {
   })
 } as FunctionalComponent
 
-Files.displayName = 'Files'
+Files.displayName = 'ElIconFiles'
 
 export default Files

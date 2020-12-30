@@ -18,6 +18,6 @@ const Check = function (props: any) {
   })
 } as FunctionalComponent
 
-Check.displayName = 'Check'
+Check.displayName = 'ElIconCheck'
 
 export default Check

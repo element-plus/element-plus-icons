@@ -18,6 +18,6 @@ const Watermelon = function (props: any) {
   })
 } as FunctionalComponent
 
-Watermelon.displayName = 'Watermelon'
+Watermelon.displayName = 'ElIconWatermelon'
 
 export default Watermelon

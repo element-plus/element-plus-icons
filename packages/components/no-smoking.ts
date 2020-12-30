@@ -18,6 +18,6 @@ const NoSmoking = function (props: any) {
   })
 } as FunctionalComponent
 
-NoSmoking.displayName = 'NoSmoking'
+NoSmoking.displayName = 'ElIconNoSmoking'
 
 export default NoSmoking

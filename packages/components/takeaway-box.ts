@@ -18,6 +18,6 @@ const TakeawayBox = function (props: any) {
   })
 } as FunctionalComponent
 
-TakeawayBox.displayName = 'TakeawayBox'
+TakeawayBox.displayName = 'ElIconTakeawayBox'
 
 export default TakeawayBox

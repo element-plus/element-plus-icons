@@ -29,6 +29,6 @@ const School = function (props: any) {
   })
 } as FunctionalComponent
 
-School.displayName = 'School'
+School.displayName = 'ElIconSchool'
 
 export default School

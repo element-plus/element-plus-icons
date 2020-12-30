@@ -18,6 +18,6 @@ const SuccessFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-SuccessFilled.displayName = 'SuccessFilled'
+SuccessFilled.displayName = 'ElIconSuccessFilled'
 
 export default SuccessFilled

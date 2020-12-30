@@ -18,6 +18,6 @@ const Menu = function (props: any) {
   })
 } as FunctionalComponent
 
-Menu.displayName = 'Menu'
+Menu.displayName = 'ElIconMenu'
 
 export default Menu

@@ -18,6 +18,6 @@ const LocationFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-LocationFilled.displayName = 'LocationFilled'
+LocationFilled.displayName = 'ElIconLocationFilled'
 
 export default LocationFilled

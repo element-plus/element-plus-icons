@@ -27,6 +27,6 @@ const Smoking = function (props: any) {
   })
 } as FunctionalComponent
 
-Smoking.displayName = 'Smoking'
+Smoking.displayName = 'ElIconSmoking'
 
 export default Smoking

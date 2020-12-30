@@ -18,6 +18,6 @@ const View = function (props: any) {
   })
 } as FunctionalComponent
 
-View.displayName = 'View'
+View.displayName = 'ElIconView'
 
 export default View

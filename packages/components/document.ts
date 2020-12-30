@@ -18,6 +18,6 @@ const Document = function (props: any) {
   })
 } as FunctionalComponent
 
-Document.displayName = 'Document'
+Document.displayName = 'ElIconDocument'
 
 export default Document

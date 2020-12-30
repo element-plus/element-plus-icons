@@ -18,6 +18,6 @@ const Delete = function (props: any) {
   })
 } as FunctionalComponent
 
-Delete.displayName = 'Delete'
+Delete.displayName = 'ElIconDelete'
 
 export default Delete

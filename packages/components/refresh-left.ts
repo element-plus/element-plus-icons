@@ -18,6 +18,6 @@ const RefreshLeft = function (props: any) {
   })
 } as FunctionalComponent
 
-RefreshLeft.displayName = 'RefreshLeft'
+RefreshLeft.displayName = 'ElIconRefreshLeft'
 
 export default RefreshLeft

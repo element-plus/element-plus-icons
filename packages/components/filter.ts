@@ -18,6 +18,6 @@ const Filter = function (props: any) {
   })
 } as FunctionalComponent
 
-Filter.displayName = 'Filter'
+Filter.displayName = 'ElIconFilter'
 
 export default Filter

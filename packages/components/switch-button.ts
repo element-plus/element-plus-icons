@@ -24,6 +24,6 @@ const SwitchButton = function (props: any) {
   })
 } as FunctionalComponent
 
-SwitchButton.displayName = 'SwitchButton'
+SwitchButton.displayName = 'ElIconSwitchButton'
 
 export default SwitchButton

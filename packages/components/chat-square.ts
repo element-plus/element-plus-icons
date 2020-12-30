@@ -18,6 +18,6 @@ const ChatSquare = function (props: any) {
   })
 } as FunctionalComponent
 
-ChatSquare.displayName = 'ChatSquare'
+ChatSquare.displayName = 'ElIconChatSquare'
 
 export default ChatSquare

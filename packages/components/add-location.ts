@@ -33,6 +33,6 @@ const AddLocation = function (props: any) {
   })
 } as FunctionalComponent
 
-AddLocation.displayName = 'AddLocation'
+AddLocation.displayName = 'ElIconAddLocation'
 
 export default AddLocation

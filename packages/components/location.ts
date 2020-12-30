@@ -27,6 +27,6 @@ const Location = function (props: any) {
   })
 } as FunctionalComponent
 
-Location.displayName = 'Location'
+Location.displayName = 'ElIconLocation'
 
 export default Location

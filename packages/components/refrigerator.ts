@@ -18,6 +18,6 @@ const Refrigerator = function (props: any) {
   })
 } as FunctionalComponent
 
-Refrigerator.displayName = 'Refrigerator'
+Refrigerator.displayName = 'ElIconRefrigerator'
 
 export default Refrigerator

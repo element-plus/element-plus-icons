@@ -18,6 +18,6 @@ const Cherry = function (props: any) {
   })
 } as FunctionalComponent
 
-Cherry.displayName = 'Cherry'
+Cherry.displayName = 'ElIconCherry'
 
 export default Cherry

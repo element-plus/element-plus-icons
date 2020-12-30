@@ -18,6 +18,6 @@ const Bottom = function (props: any) {
   })
 } as FunctionalComponent
 
-Bottom.displayName = 'Bottom'
+Bottom.displayName = 'ElIconBottom'
 
 export default Bottom

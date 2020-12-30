@@ -18,6 +18,6 @@ const Operation = function (props: any) {
   })
 } as FunctionalComponent
 
-Operation.displayName = 'Operation'
+Operation.displayName = 'ElIconOperation'
 
 export default Operation

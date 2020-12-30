@@ -18,6 +18,6 @@ const List = function (props: any) {
   })
 } as FunctionalComponent
 
-List.displayName = 'List'
+List.displayName = 'ElIconList'
 
 export default List

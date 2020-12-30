@@ -18,6 +18,6 @@ const Upload = function (props: any) {
   })
 } as FunctionalComponent
 
-Upload.displayName = 'Upload'
+Upload.displayName = 'ElIconUpload'
 
 export default Upload

@@ -18,6 +18,6 @@ const Briefcase = function (props: any) {
   })
 } as FunctionalComponent
 
-Briefcase.displayName = 'Briefcase'
+Briefcase.displayName = 'ElIconBriefcase'
 
 export default Briefcase

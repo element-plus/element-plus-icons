@@ -30,6 +30,6 @@ const DeleteLocation = function (props: any) {
   })
 } as FunctionalComponent
 
-DeleteLocation.displayName = 'DeleteLocation'
+DeleteLocation.displayName = 'ElIconDeleteLocation'
 
 export default DeleteLocation

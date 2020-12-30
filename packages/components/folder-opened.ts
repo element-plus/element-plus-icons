@@ -18,6 +18,6 @@ const FolderOpened = function (props: any) {
   })
 } as FunctionalComponent
 
-FolderOpened.displayName = 'FolderOpened'
+FolderOpened.displayName = 'ElIconFolderOpened'
 
 export default FolderOpened

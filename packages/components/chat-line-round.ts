@@ -27,6 +27,6 @@ const ChatLineRound = function (props: any) {
   })
 } as FunctionalComponent
 
-ChatLineRound.displayName = 'ChatLineRound'
+ChatLineRound.displayName = 'ElIconChatLineRound'
 
 export default ChatLineRound

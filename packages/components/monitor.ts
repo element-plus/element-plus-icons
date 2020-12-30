@@ -18,6 +18,6 @@ const Monitor = function (props: any) {
   })
 } as FunctionalComponent
 
-Monitor.displayName = 'Monitor'
+Monitor.displayName = 'ElIconMonitor'
 
 export default Monitor

@@ -18,6 +18,6 @@ const Management = function (props: any) {
   })
 } as FunctionalComponent
 
-Management.displayName = 'Management'
+Management.displayName = 'ElIconManagement'
 
 export default Management

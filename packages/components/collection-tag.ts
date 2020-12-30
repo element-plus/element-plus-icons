@@ -18,6 +18,6 @@ const CollectionTag = function (props: any) {
   })
 } as FunctionalComponent
 
-CollectionTag.displayName = 'CollectionTag'
+CollectionTag.displayName = 'ElIconCollectionTag'
 
 export default CollectionTag

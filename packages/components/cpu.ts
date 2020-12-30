@@ -27,6 +27,6 @@ const Cpu = function (props: any) {
   })
 } as FunctionalComponent
 
-Cpu.displayName = 'Cpu'
+Cpu.displayName = 'ElIconCpu'
 
 export default Cpu

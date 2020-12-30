@@ -37,7 +37,7 @@ const ${normalized} = function (props: any) {
   );
 } as FunctionalComponent;
 
-${normalized}.displayName = '${normalized}';
+${normalized}.displayName = 'ElIcon${normalized}';
 
 export default ${normalized};
 
@@ -47,7 +47,8 @@ echo "export { default as ${normalized} } from './components/${BASE_NAME}'" >> p
 }
 
 export -f gen
-
+# empty index.ts
+echo "" > packages/index.ts
 # gen ./v2/add-location.svg in case you want to use it directly
 # find all file with extension `svg`, then call the function above
 find . -name *.svg | sort | xargs -I {} bash -c 'gen "$@"' _ {}
@@ -55,3 +56,4 @@ find . -name *.svg | sort | xargs -I {} bash -c 'gen "$@"' _ {}
 # We also need to add Icon component into `pacages/index.ts`
 # after these components built.
 echo "export { default as Icon } from './icon/icon'" >> packages/index.ts
+echo "export { default as getExternalIcons, ExternalIcon } from './icon/external-icon'" >> packages/index.ts

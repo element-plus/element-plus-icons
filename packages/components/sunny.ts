@@ -18,6 +18,6 @@ const Sunny = function (props: any) {
   })
 } as FunctionalComponent
 
-Sunny.displayName = 'Sunny'
+Sunny.displayName = 'ElIconSunny'
 
 export default Sunny

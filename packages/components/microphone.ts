@@ -18,6 +18,6 @@ const Microphone = function (props: any) {
   })
 } as FunctionalComponent
 
-Microphone.displayName = 'Microphone'
+Microphone.displayName = 'ElIconMicrophone'
 
 export default Microphone

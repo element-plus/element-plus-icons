@@ -18,6 +18,6 @@ const User = function (props: any) {
   })
 } as FunctionalComponent
 
-User.displayName = 'User'
+User.displayName = 'ElIconUser'
 
 export default User

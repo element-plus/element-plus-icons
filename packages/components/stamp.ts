@@ -18,6 +18,6 @@ const Stamp = function (props: any) {
   })
 } as FunctionalComponent
 
-Stamp.displayName = 'Stamp'
+Stamp.displayName = 'ElIconStamp'
 
 export default Stamp

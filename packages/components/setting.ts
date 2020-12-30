@@ -18,6 +18,6 @@ const Setting = function (props: any) {
   })
 } as FunctionalComponent
 
-Setting.displayName = 'Setting'
+Setting.displayName = 'ElIconSetting'
 
 export default Setting

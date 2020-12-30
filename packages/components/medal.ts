@@ -27,6 +27,6 @@ const Medal = function (props: any) {
   })
 } as FunctionalComponent
 
-Medal.displayName = 'Medal'
+Medal.displayName = 'ElIconMedal'
 
 export default Medal

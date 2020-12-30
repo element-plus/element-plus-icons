@@ -18,6 +18,6 @@ const More = function (props: any) {
   })
 } as FunctionalComponent
 
-More.displayName = 'More'
+More.displayName = 'ElIconMore'
 
 export default More

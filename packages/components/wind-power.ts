@@ -18,6 +18,6 @@ const WindPower = function (props: any) {
   })
 } as FunctionalComponent
 
-WindPower.displayName = 'WindPower'
+WindPower.displayName = 'ElIconWindPower'
 
 export default WindPower

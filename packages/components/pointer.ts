@@ -18,6 +18,6 @@ const Pointer = function (props: any) {
   })
 } as FunctionalComponent
 
-Pointer.displayName = 'Pointer'
+Pointer.displayName = 'ElIconPointer'
 
 export default Pointer

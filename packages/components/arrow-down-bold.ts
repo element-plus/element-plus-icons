@@ -18,6 +18,6 @@ const ArrowDownBold = function (props: any) {
   })
 } as FunctionalComponent
 
-ArrowDownBold.displayName = 'ArrowDownBold'
+ArrowDownBold.displayName = 'ElIconArrowDownBold'
 
 export default ArrowDownBold

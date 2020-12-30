@@ -36,6 +36,6 @@ const OfficeBuilding = function (props: any) {
   })
 } as FunctionalComponent
 
-OfficeBuilding.displayName = 'OfficeBuilding'
+OfficeBuilding.displayName = 'ElIconOfficeBuilding'
 
 export default OfficeBuilding

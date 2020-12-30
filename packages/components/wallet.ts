@@ -29,6 +29,6 @@ const Wallet = function (props: any) {
   })
 } as FunctionalComponent
 
-Wallet.displayName = 'Wallet'
+Wallet.displayName = 'ElIconWallet'
 
 export default Wallet

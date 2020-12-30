@@ -27,6 +27,6 @@ const Connection = function (props: any) {
   })
 } as FunctionalComponent
 
-Connection.displayName = 'Connection'
+Connection.displayName = 'ElIconConnection'
 
 export default Connection

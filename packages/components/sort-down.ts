@@ -18,6 +18,6 @@ const SortDown = function (props: any) {
   })
 } as FunctionalComponent
 
-SortDown.displayName = 'SortDown'
+SortDown.displayName = 'ElIconSortDown'
 
 export default SortDown

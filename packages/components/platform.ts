@@ -17,6 +17,6 @@ const Platform = function (props: any) {
   })
 } as FunctionalComponent
 
-Platform.displayName = 'Platform'
+Platform.displayName = 'ElIconPlatform'
 
 export default Platform

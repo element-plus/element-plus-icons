@@ -18,6 +18,6 @@ const DataAnalysis = function (props: any) {
   })
 } as FunctionalComponent
 
-DataAnalysis.displayName = 'DataAnalysis'
+DataAnalysis.displayName = 'ElIconDataAnalysis'
 
 export default DataAnalysis

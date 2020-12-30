@@ -18,6 +18,6 @@ const RemoveFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-RemoveFilled.displayName = 'RemoveFilled'
+RemoveFilled.displayName = 'ElIconRemoveFilled'
 
 export default RemoveFilled

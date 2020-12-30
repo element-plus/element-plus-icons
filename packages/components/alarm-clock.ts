@@ -27,6 +27,6 @@ const AlarmClock = function (props: any) {
   })
 } as FunctionalComponent
 
-AlarmClock.displayName = 'AlarmClock'
+AlarmClock.displayName = 'ElIconAlarmClock'
 
 export default AlarmClock

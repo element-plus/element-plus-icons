@@ -27,6 +27,6 @@ const MuteNotification = function (props: any) {
   })
 } as FunctionalComponent
 
-MuteNotification.displayName = 'MuteNotification'
+MuteNotification.displayName = 'ElIconMuteNotification'
 
 export default MuteNotification

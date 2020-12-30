@@ -18,6 +18,6 @@ const MilkTea = function (props: any) {
   })
 } as FunctionalComponent
 
-MilkTea.displayName = 'MilkTea'
+MilkTea.displayName = 'ElIconMilkTea'
 
 export default MilkTea

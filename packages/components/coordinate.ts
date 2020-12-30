@@ -20,6 +20,6 @@ const Coordinate = function (props: any) {
   })
 } as FunctionalComponent
 
-Coordinate.displayName = 'Coordinate'
+Coordinate.displayName = 'ElIconCoordinate'
 
 export default Coordinate

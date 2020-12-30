@@ -18,6 +18,6 @@ const VideoCamera = function (props: any) {
   })
 } as FunctionalComponent
 
-VideoCamera.displayName = 'VideoCamera'
+VideoCamera.displayName = 'ElIconVideoCamera'
 
 export default VideoCamera

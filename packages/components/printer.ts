@@ -18,6 +18,6 @@ const Printer = function (props: any) {
   })
 } as FunctionalComponent
 
-Printer.displayName = 'Printer'
+Printer.displayName = 'ElIconPrinter'
 
 export default Printer

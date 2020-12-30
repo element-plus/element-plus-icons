@@ -27,6 +27,6 @@ const PriceTag = function (props: any) {
   })
 } as FunctionalComponent
 
-PriceTag.displayName = 'PriceTag'
+PriceTag.displayName = 'ElIconPriceTag'
 
 export default PriceTag

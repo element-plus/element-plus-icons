@@ -18,6 +18,6 @@ const CloseBold = function (props: any) {
   })
 } as FunctionalComponent
 
-CloseBold.displayName = 'CloseBold'
+CloseBold.displayName = 'ElIconCloseBold'
 
 export default CloseBold

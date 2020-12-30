@@ -18,6 +18,6 @@ const BellFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-BellFilled.displayName = 'BellFilled'
+BellFilled.displayName = 'ElIconBellFilled'
 
 export default BellFilled

@@ -18,6 +18,6 @@ const Right = function (props: any) {
   })
 } as FunctionalComponent
 
-Right.displayName = 'Right'
+Right.displayName = 'ElIconRight'
 
 export default Right

@@ -18,6 +18,6 @@ const Close = function (props: any) {
   })
 } as FunctionalComponent
 
-Close.displayName = 'Close'
+Close.displayName = 'ElIconClose'
 
 export default Close

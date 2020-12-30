@@ -18,6 +18,6 @@ const Pear = function (props: any) {
   })
 } as FunctionalComponent
 
-Pear.displayName = 'Pear'
+Pear.displayName = 'ElIconPear'
 
 export default Pear

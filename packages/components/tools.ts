@@ -18,6 +18,6 @@ const Tools = function (props: any) {
   })
 } as FunctionalComponent
 
-Tools.displayName = 'Tools'
+Tools.displayName = 'ElIconTools'
 
 export default Tools

@@ -18,6 +18,6 @@ const CameraFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-CameraFilled.displayName = 'CameraFilled'
+CameraFilled.displayName = 'ElIconCameraFilled'
 
 export default CameraFilled

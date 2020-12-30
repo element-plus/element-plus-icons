@@ -18,6 +18,6 @@ const CircleCheckFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-CircleCheckFilled.displayName = 'CircleCheckFilled'
+CircleCheckFilled.displayName = 'ElIconCircleCheckFilled'
 
 export default CircleCheckFilled

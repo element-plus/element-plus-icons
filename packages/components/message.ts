@@ -27,6 +27,6 @@ const Message = function (props: any) {
   })
 } as FunctionalComponent
 
-Message.displayName = 'Message'
+Message.displayName = 'ElIconMessage'
 
 export default Message

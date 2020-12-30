@@ -18,6 +18,6 @@ const Van = function (props: any) {
   })
 } as FunctionalComponent
 
-Van.displayName = 'Van'
+Van.displayName = 'ElIconVan'
 
 export default Van

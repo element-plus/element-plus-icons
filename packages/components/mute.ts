@@ -27,6 +27,6 @@ const Mute = function (props: any) {
   })
 } as FunctionalComponent
 
-Mute.displayName = 'Mute'
+Mute.displayName = 'ElIconMute'
 
 export default Mute

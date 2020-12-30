@@ -18,6 +18,6 @@ const Position = function (props: any) {
   })
 } as FunctionalComponent
 
-Position.displayName = 'Position'
+Position.displayName = 'ElIconPosition'
 
 export default Position

@@ -18,6 +18,6 @@ const KnifeFork = function (props: any) {
   })
 } as FunctionalComponent
 
-KnifeFork.displayName = 'KnifeFork'
+KnifeFork.displayName = 'ElIconKnifeFork'
 
 export default KnifeFork

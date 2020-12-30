@@ -18,6 +18,6 @@ const Goblet = function (props: any) {
   })
 } as FunctionalComponent
 
-Goblet.displayName = 'Goblet'
+Goblet.displayName = 'ElIconGoblet'
 
 export default Goblet

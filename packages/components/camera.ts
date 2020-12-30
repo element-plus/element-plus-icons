@@ -18,6 +18,6 @@ const Camera = function (props: any) {
   })
 } as FunctionalComponent
 
-Camera.displayName = 'Camera'
+Camera.displayName = 'ElIconCamera'
 
 export default Camera

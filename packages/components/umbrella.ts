@@ -18,6 +18,6 @@ const Umbrella = function (props: any) {
   })
 } as FunctionalComponent
 
-Umbrella.displayName = 'Umbrella'
+Umbrella.displayName = 'ElIconUmbrella'
 
 export default Umbrella

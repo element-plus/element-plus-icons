@@ -18,6 +18,6 @@ const Grid = function (props: any) {
   })
 } as FunctionalComponent
 
-Grid.displayName = 'Grid'
+Grid.displayName = 'ElIconGrid'
 
 export default Grid

@@ -27,6 +27,6 @@ const TopLeft = function (props: any) {
   })
 } as FunctionalComponent
 
-TopLeft.displayName = 'TopLeft'
+TopLeft.displayName = 'ElIconTopLeft'
 
 export default TopLeft

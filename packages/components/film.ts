@@ -27,6 +27,6 @@ const Film = function (props: any) {
   })
 } as FunctionalComponent
 
-Film.displayName = 'Film'
+Film.displayName = 'ElIconFilm'
 
 export default Film

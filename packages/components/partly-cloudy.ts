@@ -27,6 +27,6 @@ const PartlyCloudy = function (props: any) {
   })
 } as FunctionalComponent
 
-PartlyCloudy.displayName = 'PartlyCloudy'
+PartlyCloudy.displayName = 'ElIconPartlyCloudy'
 
 export default PartlyCloudy

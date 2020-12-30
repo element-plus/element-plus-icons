@@ -27,6 +27,6 @@ const ChatDotRound = function (props: any) {
   })
 } as FunctionalComponent
 
-ChatDotRound.displayName = 'ChatDotRound'
+ChatDotRound.displayName = 'ElIconChatDotRound'
 
 export default ChatDotRound

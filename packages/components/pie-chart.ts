@@ -27,6 +27,6 @@ const PieChart = function (props: any) {
   })
 } as FunctionalComponent
 
-PieChart.displayName = 'PieChart'
+PieChart.displayName = 'ElIconPieChart'
 
 export default PieChart

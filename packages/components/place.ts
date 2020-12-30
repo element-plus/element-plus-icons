@@ -36,6 +36,6 @@ const Place = function (props: any) {
   })
 } as FunctionalComponent
 
-Place.displayName = 'Place'
+Place.displayName = 'ElIconPlace'
 
 export default Place

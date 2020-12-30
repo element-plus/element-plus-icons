@@ -18,6 +18,6 @@ const Expand = function (props: any) {
   })
 } as FunctionalComponent
 
-Expand.displayName = 'Expand'
+Expand.displayName = 'ElIconExpand'
 
 export default Expand

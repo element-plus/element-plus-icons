@@ -18,6 +18,6 @@ const CircleCloseFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-CircleCloseFilled.displayName = 'CircleCloseFilled'
+CircleCloseFilled.displayName = 'ElIconCircleCloseFilled'
 
 export default CircleCloseFilled

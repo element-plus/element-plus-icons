@@ -33,6 +33,6 @@ const Clock = function (props: any) {
   })
 } as FunctionalComponent
 
-Clock.displayName = 'Clock'
+Clock.displayName = 'ElIconClock'
 
 export default Clock

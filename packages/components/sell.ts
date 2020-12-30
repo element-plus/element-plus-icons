@@ -18,6 +18,6 @@ const Sell = function (props: any) {
   })
 } as FunctionalComponent
 
-Sell.displayName = 'Sell'
+Sell.displayName = 'ElIconSell'
 
 export default Sell

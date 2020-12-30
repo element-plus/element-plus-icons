@@ -27,6 +27,6 @@ const ReadingLamp = function (props: any) {
   })
 } as FunctionalComponent
 
-ReadingLamp.displayName = 'ReadingLamp'
+ReadingLamp.displayName = 'ElIconReadingLamp'
 
 export default ReadingLamp

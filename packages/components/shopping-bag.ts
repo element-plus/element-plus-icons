@@ -20,6 +20,6 @@ const ShoppingBag = function (props: any) {
   })
 } as FunctionalComponent
 
-ShoppingBag.displayName = 'ShoppingBag'
+ShoppingBag.displayName = 'ElIconShoppingBag'
 
 export default ShoppingBag

@@ -26,6 +26,6 @@ const CreditCard = function (props: any) {
   })
 } as FunctionalComponent
 
-CreditCard.displayName = 'CreditCard'
+CreditCard.displayName = 'ElIconCreditCard'
 
 export default CreditCard

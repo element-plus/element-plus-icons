@@ -18,6 +18,6 @@ const MessageBox = function (props: any) {
   })
 } as FunctionalComponent
 
-MessageBox.displayName = 'MessageBox'
+MessageBox.displayName = 'ElIconMessageBox'
 
 export default MessageBox

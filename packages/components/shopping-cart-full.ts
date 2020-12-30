@@ -27,6 +27,6 @@ const ShoppingCartFull = function (props: any) {
   })
 } as FunctionalComponent
 
-ShoppingCartFull.displayName = 'ShoppingCartFull'
+ShoppingCartFull.displayName = 'ElIconShoppingCartFull'
 
 export default ShoppingCartFull

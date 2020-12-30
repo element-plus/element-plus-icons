@@ -18,6 +18,6 @@ const Loading = function (props: any) {
   })
 } as FunctionalComponent
 
-Loading.displayName = 'Loading'
+Loading.displayName = 'ElIconLoading'
 
 export default Loading

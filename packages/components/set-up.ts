@@ -42,6 +42,6 @@ const SetUp = function (props: any) {
   })
 } as FunctionalComponent
 
-SetUp.displayName = 'SetUp'
+SetUp.displayName = 'ElIconSetUp'
 
 export default SetUp

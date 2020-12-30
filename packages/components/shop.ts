@@ -18,6 +18,6 @@ const Shop = function (props: any) {
   })
 } as FunctionalComponent
 
-Shop.displayName = 'Shop'
+Shop.displayName = 'ElIconShop'
 
 export default Shop

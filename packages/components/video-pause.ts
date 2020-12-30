@@ -18,6 +18,6 @@ const VideoPause = function (props: any) {
   })
 } as FunctionalComponent
 
-VideoPause.displayName = 'VideoPause'
+VideoPause.displayName = 'ElIconVideoPause'
 
 export default VideoPause

@@ -18,6 +18,6 @@ const ZoomIn = function (props: any) {
   })
 } as FunctionalComponent
 
-ZoomIn.displayName = 'ZoomIn'
+ZoomIn.displayName = 'ElIconZoomIn'
 
 export default ZoomIn

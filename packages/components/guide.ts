@@ -27,6 +27,6 @@ const Guide = function (props: any) {
   })
 } as FunctionalComponent
 
-Guide.displayName = 'Guide'
+Guide.displayName = 'ElIconGuide'
 
 export default Guide

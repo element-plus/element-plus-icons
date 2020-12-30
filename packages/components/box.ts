@@ -29,6 +29,6 @@ const Box = function (props: any) {
   })
 } as FunctionalComponent
 
-Box.displayName = 'Box'
+Box.displayName = 'ElIconBox'
 
 export default Box

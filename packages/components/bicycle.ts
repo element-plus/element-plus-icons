@@ -48,6 +48,6 @@ const Bicycle = function (props: any) {
   })
 } as FunctionalComponent
 
-Bicycle.displayName = 'Bicycle'
+Bicycle.displayName = 'ElIconBicycle'
 
 export default Bicycle

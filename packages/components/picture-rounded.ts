@@ -27,6 +27,6 @@ const PictureRounded = function (props: any) {
   })
 } as FunctionalComponent
 
-PictureRounded.displayName = 'PictureRounded'
+PictureRounded.displayName = 'ElIconPictureRounded'
 
 export default PictureRounded

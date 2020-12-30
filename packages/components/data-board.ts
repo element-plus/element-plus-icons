@@ -29,6 +29,6 @@ const DataBoard = function (props: any) {
   })
 } as FunctionalComponent
 
-DataBoard.displayName = 'DataBoard'
+DataBoard.displayName = 'ElIconDataBoard'
 
 export default DataBoard

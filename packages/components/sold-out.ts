@@ -18,6 +18,6 @@ const SoldOut = function (props: any) {
   })
 } as FunctionalComponent
 
-SoldOut.displayName = 'SoldOut'
+SoldOut.displayName = 'ElIconSoldOut'
 
 export default SoldOut

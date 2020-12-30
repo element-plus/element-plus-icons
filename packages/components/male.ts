@@ -33,6 +33,6 @@ const Male = function (props: any) {
   })
 } as FunctionalComponent
 
-Male.displayName = 'Male'
+Male.displayName = 'ElIconMale'
 
 export default Male

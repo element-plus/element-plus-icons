@@ -27,6 +27,6 @@ const ChatLineSquare = function (props: any) {
   })
 } as FunctionalComponent
 
-ChatLineSquare.displayName = 'ChatLineSquare'
+ChatLineSquare.displayName = 'ElIconChatLineSquare'
 
 export default ChatLineSquare

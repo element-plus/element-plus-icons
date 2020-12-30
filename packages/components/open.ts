@@ -27,6 +27,6 @@ const Open = function (props: any) {
   })
 } as FunctionalComponent
 
-Open.displayName = 'Open'
+Open.displayName = 'ElIconOpen'
 
 export default Open

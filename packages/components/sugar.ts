@@ -18,6 +18,6 @@ const Sugar = function (props: any) {
   })
 } as FunctionalComponent
 
-Sugar.displayName = 'Sugar'
+Sugar.displayName = 'ElIconSugar'
 
 export default Sugar

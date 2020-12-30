@@ -18,6 +18,6 @@ const Lollipop = function (props: any) {
   })
 } as FunctionalComponent
 
-Lollipop.displayName = 'Lollipop'
+Lollipop.displayName = 'ElIconLollipop'
 
 export default Lollipop

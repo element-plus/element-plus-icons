@@ -18,6 +18,6 @@ const WalletFilled = function (props: any) {
   })
 } as FunctionalComponent
 
-WalletFilled.displayName = 'WalletFilled'
+WalletFilled.displayName = 'ElIconWalletFilled'
 
 export default WalletFilled

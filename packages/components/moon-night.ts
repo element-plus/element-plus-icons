@@ -27,6 +27,6 @@ const MoonNight = function (props: any) {
   })
 } as FunctionalComponent
 
-MoonNight.displayName = 'MoonNight'
+MoonNight.displayName = 'ElIconMoonNight'
 
 export default MoonNight

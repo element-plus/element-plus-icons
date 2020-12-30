@@ -18,6 +18,6 @@ const MagicStick = function (props: any) {
   })
 } as FunctionalComponent
 
-MagicStick.displayName = 'MagicStick'
+MagicStick.displayName = 'ElIconMagicStick'
 
 export default MagicStick

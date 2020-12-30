@@ -18,6 +18,6 @@ const Fold = function (props: any) {
   })
 } as FunctionalComponent
 
-Fold.displayName = 'Fold'
+Fold.displayName = 'ElIconFold'
 
 export default Fold

@@ -18,6 +18,6 @@ const Warning = function (props: any) {
   })
 } as FunctionalComponent
 
-Warning.displayName = 'Warning'
+Warning.displayName = 'ElIconWarning'
 
 export default Warning

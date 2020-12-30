@@ -18,6 +18,6 @@ const ScaleToOriginal = function (props: any) {
   })
 } as FunctionalComponent
 
-ScaleToOriginal.displayName = 'ScaleToOriginal'
+ScaleToOriginal.displayName = 'ElIconScaleToOriginal'
 
 export default ScaleToOriginal

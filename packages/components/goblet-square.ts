@@ -18,6 +18,6 @@ const GobletSquare = function (props: any) {
   })
 } as FunctionalComponent
 
-GobletSquare.displayName = 'GobletSquare'
+GobletSquare.displayName = 'ElIconGobletSquare'
 
 export default GobletSquare

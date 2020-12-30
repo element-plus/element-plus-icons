@@ -27,6 +27,6 @@ const Suitcase = function (props: any) {
   })
 } as FunctionalComponent
 
-Suitcase.displayName = 'Suitcase'
+Suitcase.displayName = 'ElIconSuitcase'
 
 export default Suitcase

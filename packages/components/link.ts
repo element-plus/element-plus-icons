@@ -18,6 +18,6 @@ const Link = function (props: any) {
   })
 } as FunctionalComponent
 
-Link.displayName = 'Link'
+Link.displayName = 'ElIconLink'
 
 export default Link

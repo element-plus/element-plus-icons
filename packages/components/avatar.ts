@@ -18,6 +18,6 @@ const Avatar = function (props: any) {
   })
 } as FunctionalComponent
 
-Avatar.displayName = 'Avatar'
+Avatar.displayName = 'ElIconAvatar'
 
 export default Avatar

@@ -27,6 +27,6 @@ const Notification = function (props: any) {
   })
 } as FunctionalComponent
 
-Notification.displayName = 'Notification'
+Notification.displayName = 'ElIconNotification'
 
 export default Notification

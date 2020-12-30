@@ -18,6 +18,6 @@ const DishDot = function (props: any) {
   })
 } as FunctionalComponent
 
-DishDot.displayName = 'DishDot'
+DishDot.displayName = 'ElIconDishDot'
 
 export default DishDot

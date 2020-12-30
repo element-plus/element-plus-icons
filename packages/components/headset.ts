@@ -18,6 +18,6 @@ const Headset = function (props: any) {
   })
 } as FunctionalComponent
 
-Headset.displayName = 'Headset'
+Headset.displayName = 'ElIconHeadset'
 
 export default Headset

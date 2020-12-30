@@ -18,6 +18,6 @@ const Opportunity = function (props: any) {
   })
 } as FunctionalComponent
 
-Opportunity.displayName = 'Opportunity'
+Opportunity.displayName = 'ElIconOpportunity'
 
 export default Opportunity

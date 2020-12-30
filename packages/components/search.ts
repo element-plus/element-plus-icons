@@ -18,6 +18,6 @@ const Search = function (props: any) {
   })
 } as FunctionalComponent
 
-Search.displayName = 'Search'
+Search.displayName = 'ElIconSearch'
 
 export default Search

@@ -27,6 +27,6 @@ const Postcard = function (props: any) {
   })
 } as FunctionalComponent
 
-Postcard.displayName = 'Postcard'
+Postcard.displayName = 'ElIconPostcard'
 
 export default Postcard

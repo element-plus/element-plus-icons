@@ -15,6 +15,6 @@ const Flag = function (props: any) {
   })
 } as FunctionalComponent
 
-Flag.displayName = 'Flag'
+Flag.displayName = 'ElIconFlag'
 
 export default Flag

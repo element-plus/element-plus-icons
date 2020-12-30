@@ -36,6 +36,6 @@ const Money = function (props: any) {
   })
 } as FunctionalComponent
 
-Money.displayName = 'Money'
+Money.displayName = 'ElIconMoney'
 
 export default Money

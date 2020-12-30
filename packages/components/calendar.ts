@@ -18,6 +18,6 @@ const Calendar = function (props: any) {
   })
 } as FunctionalComponent
 
-Calendar.displayName = 'Calendar'
+Calendar.displayName = 'ElIconCalendar'
 
 export default Calendar

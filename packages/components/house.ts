@@ -18,6 +18,6 @@ const House = function (props: any) {
   })
 } as FunctionalComponent
 
-House.displayName = 'House'
+House.displayName = 'ElIconHouse'
 
 export default House

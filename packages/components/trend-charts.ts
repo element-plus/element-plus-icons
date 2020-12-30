@@ -18,6 +18,6 @@ const TrendCharts = function (props: any) {
   })
 } as FunctionalComponent
 
-TrendCharts.displayName = 'TrendCharts'
+TrendCharts.displayName = 'ElIconTrendCharts'
 
 export default TrendCharts

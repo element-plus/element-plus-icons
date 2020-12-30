@@ -18,6 +18,6 @@ const FolderAdd = function (props: any) {
   })
 } as FunctionalComponent
 
-FolderAdd.displayName = 'FolderAdd'
+FolderAdd.displayName = 'ElIconFolderAdd'
 
 export default FolderAdd

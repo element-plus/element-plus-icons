@@ -18,6 +18,6 @@ const ArrowLeft = function (props: any) {
   })
 } as FunctionalComponent
 
-ArrowLeft.displayName = 'ArrowLeft'
+ArrowLeft.displayName = 'ElIconArrowLeft'
 
 export default ArrowLeft

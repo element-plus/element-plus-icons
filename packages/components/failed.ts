@@ -18,6 +18,6 @@ const Failed = function (props: any) {
   })
 } as FunctionalComponent
 
-Failed.displayName = 'Failed'
+Failed.displayName = 'ElIconFailed'
 
 export default Failed

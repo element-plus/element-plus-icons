@@ -18,6 +18,6 @@ const ChatRound = function (props: any) {
   })
 } as FunctionalComponent
 
-ChatRound.displayName = 'ChatRound'
+ChatRound.displayName = 'ElIconChatRound'
 
 export default ChatRound

@@ -18,6 +18,6 @@ const Magnet = function (props: any) {
   })
 } as FunctionalComponent
 
-Magnet.displayName = 'Magnet'
+Magnet.displayName = 'ElIconMagnet'
 
 export default Magnet

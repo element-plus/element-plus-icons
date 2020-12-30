@@ -18,6 +18,6 @@ const Help = function (props: any) {
   })
 } as FunctionalComponent
 
-Help.displayName = 'Help'
+Help.displayName = 'ElIconHelp'
 
 export default Help

@@ -18,6 +18,6 @@ const Scissor = function (props: any) {
   })
 } as FunctionalComponent
 
-Scissor.displayName = 'Scissor'
+Scissor.displayName = 'ElIconScissor'
 
 export default Scissor

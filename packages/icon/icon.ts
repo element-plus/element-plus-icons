@@ -17,23 +17,38 @@ export default defineComponent({
     class: {
       type: [Object, String, Array],
     },
+    revolve: {
+      type: Boolean,
+    },
   },
   render() {
-    const { $slots, raw, ...rest } = this
+    const { $slots, raw, style, $attrs } = this
 
     const defaultSlot = [renderSlot($slots, 'default', {}, () => [])]
     return raw
-      ? h(raw, rest, defaultSlot)
+      ? h(raw, Object.assign({ class: this.class, style }, $attrs), [
+          defaultSlot,
+        ])
       : h(
           'svg',
-          {
-            xmlns: 'http://www.w3.org/2000/svg',
-            viewBox: '0 0 1024 1024',
-            width: '1rem',
-            height: '1rem',
-            ...rest,
-          },
-          defaultSlot,
+          Object.assign(
+            {
+              xmlns: 'http://www.w3.org/2000/svg',
+              viewBox: '0 0 1024 1024',
+              width: '1rem',
+              height: '1rem',
+              fill: 'currentColor',
+              class: [
+                {
+                  'el-svg-icon-revolving': this.revolve,
+                },
+                this.class,
+              ],
+              style,
+            },
+            $attrs,
+          ),
+          [defaultSlot],
         )
   },
 })

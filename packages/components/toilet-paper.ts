@@ -27,6 +27,6 @@ const ToiletPaper = function (props: any) {
   })
 } as FunctionalComponent
 
-ToiletPaper.displayName = 'ToiletPaper'
+ToiletPaper.displayName = 'ElIconToiletPaper'
 
 export default ToiletPaper

@@ -11,6 +11,6 @@ const Minus = function (props: any) {
   })
 } as FunctionalComponent
 
-Minus.displayName = 'Minus'
+Minus.displayName = 'ElIconMinus'
 
 export default Minus

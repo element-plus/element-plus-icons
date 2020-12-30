@@ -27,6 +27,6 @@ const Notebook = function (props: any) {
   })
 } as FunctionalComponent
 
-Notebook.displayName = 'Notebook'
+Notebook.displayName = 'ElIconNotebook'
 
 export default Notebook

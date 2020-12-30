@@ -18,6 +18,6 @@ const DocumentChecked = function (props: any) {
   })
 } as FunctionalComponent
 
-DocumentChecked.displayName = 'DocumentChecked'
+DocumentChecked.displayName = 'ElIconDocumentChecked'
 
 export default DocumentChecked

@@ -27,6 +27,6 @@ const BottomRight = function (props: any) {
   })
 } as FunctionalComponent
 
-BottomRight.displayName = 'BottomRight'
+BottomRight.displayName = 'ElIconBottomRight'
 
 export default BottomRight

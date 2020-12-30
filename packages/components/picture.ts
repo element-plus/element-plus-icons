@@ -27,6 +27,6 @@ const Picture = function (props: any) {
   })
 } as FunctionalComponent
 
-Picture.displayName = 'Picture'
+Picture.displayName = 'ElIconPicture'
 
 export default Picture

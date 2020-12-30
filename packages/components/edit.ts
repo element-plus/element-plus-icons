@@ -27,6 +27,6 @@ const Edit = function (props: any) {
   })
 } as FunctionalComponent
 
-Edit.displayName = 'Edit'
+Edit.displayName = 'ElIconEdit'
 
 export default Edit

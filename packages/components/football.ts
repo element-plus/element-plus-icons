@@ -27,6 +27,6 @@ const Football = function (props: any) {
   })
 } as FunctionalComponent
 
-Football.displayName = 'Football'
+Football.displayName = 'ElIconFootball'
 
 export default Football

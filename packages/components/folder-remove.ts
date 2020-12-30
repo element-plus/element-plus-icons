@@ -18,6 +18,6 @@ const FolderRemove = function (props: any) {
   })
 } as FunctionalComponent
 
-FolderRemove.displayName = 'FolderRemove'
+FolderRemove.displayName = 'ElIconFolderRemove'
 
 export default FolderRemove

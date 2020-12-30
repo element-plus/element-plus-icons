@@ -27,6 +27,6 @@ const Unlock = function (props: any) {
   })
 } as FunctionalComponent
 
-Unlock.displayName = 'Unlock'
+Unlock.displayName = 'ElIconUnlock'
 
 export default Unlock

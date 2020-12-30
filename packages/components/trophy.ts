@@ -18,6 +18,6 @@ const Trophy = function (props: any) {
   })
 } as FunctionalComponent
 
-Trophy.displayName = 'Trophy'
+Trophy.displayName = 'ElIconTrophy'
 
 export default Trophy

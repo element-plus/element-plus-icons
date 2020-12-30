@@ -18,6 +18,6 @@ const Rank = function (props: any) {
   })
 } as FunctionalComponent
 
-Rank.displayName = 'Rank'
+Rank.displayName = 'ElIconRank'
 
 export default Rank

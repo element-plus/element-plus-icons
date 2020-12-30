@@ -18,6 +18,6 @@ const Key = function (props: any) {
   })
 } as FunctionalComponent
 
-Key.displayName = 'Key'
+Key.displayName = 'ElIconKey'
 
 export default Key

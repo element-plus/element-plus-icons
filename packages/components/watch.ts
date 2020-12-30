@@ -36,6 +36,6 @@ const Watch = function (props: any) {
   })
 } as FunctionalComponent
 
-Watch.displayName = 'Watch'
+Watch.displayName = 'ElIconWatch'
 
 export default Watch

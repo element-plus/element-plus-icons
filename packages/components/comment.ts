@@ -18,6 +18,6 @@ const Comment = function (props: any) {
   })
 } as FunctionalComponent
 
-Comment.displayName = 'Comment'
+Comment.displayName = 'ElIconComment'
 
 export default Comment

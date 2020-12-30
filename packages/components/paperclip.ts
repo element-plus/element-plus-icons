@@ -18,6 +18,6 @@ const Paperclip = function (props: any) {
   })
 } as FunctionalComponent
 
-Paperclip.displayName = 'Paperclip'
+Paperclip.displayName = 'ElIconPaperclip'
 
 export default Paperclip

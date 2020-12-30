@@ -27,6 +27,6 @@ const Mouse = function (props: any) {
   })
 } as FunctionalComponent
 
-Mouse.displayName = 'Mouse'
+Mouse.displayName = 'ElIconMouse'
 
 export default Mouse

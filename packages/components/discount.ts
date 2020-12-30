@@ -27,6 +27,6 @@ const Discount = function (props: any) {
   })
 } as FunctionalComponent
 
-Discount.displayName = 'Discount'
+Discount.displayName = 'ElIconDiscount'
 
 export default Discount

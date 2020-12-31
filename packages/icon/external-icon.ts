@@ -18,7 +18,7 @@ export const ExternalIcon = defineComponent({
     },
   },
   render() {
-    const link = `#${this.name}`;
+    const link = `#${this.name}`
     // fallthrough attributes
     return h('svg', this.$attrs, [
       h(
@@ -57,7 +57,7 @@ function generateScriptTag(url: string, deferred: boolean) {
     scriptTag.onload = res
     scriptTag.onerror = rej
   })
-  document.body.appendChild(scriptTag);
+  document.body.appendChild(scriptTag)
   return state
 }
 

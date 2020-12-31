@@ -42,7 +42,10 @@ ${normalized}.displayName = 'ElIcon${normalized}';
 export default ${normalized};
 
 EOF
+# preparing install function injection
+echo "${normalized}," >> ./temp
 # Also add the reference into `packages/index.ts` for universal build
+echo "import ${normalized} from './components/${BASE_NAME}'" >> packages/index.ts
 echo "export { default as ${normalized} } from './components/${BASE_NAME}'" >> packages/index.ts
 }
 
@@ -57,3 +60,12 @@ find . -name *.svg | sort | xargs -I {} bash -c 'gen "$@"' _ {}
 # after these components built.
 echo "export { default as Icon } from './icon/icon'" >> packages/index.ts
 echo "export { default as getExternalIcons, ExternalIcon } from './icon/external-icon'" >> packages/index.ts
+echo "import type { App } from 'vue'" >> packages/index.ts
+
+INSTALL="export const install = (app: App) => {\n\
+  [\n`cat temp`\n].forEach(comp => app.component(comp.displayName, comp)) \
+  }
+"
+echo "$INSTALL" >> packages/index.ts
+
+rm temp

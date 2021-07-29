@@ -16,3 +16,6 @@ website/play/index.vue
 packages/element-plus/version.ts
 icons/*
 build/*
+es
+lib
+types

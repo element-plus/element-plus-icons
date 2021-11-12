@@ -1,0 +1,21 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="200"
+    height="200"
+    viewBox="0 0 34 34"
+  >
+    <path 
+      d="M16.2244 3.68875L16.9521 4.46052L17.6797 3.68875C21.0595 0.103751 26.5136 0.103751 29.8935 3.68875C33.3049 7.30721 33.3049 13.1969 29.8935 16.8154L16.9521 30.5422L4.01063 16.8154C0.5992 13.1969 0.5992 7.30721 4.01063 3.68875C7.3905 0.103751 12.8446 0.103751 16.2244 3.68875Z"
+      stroke-width="2"
+      stroke="#333"
+      fill="transparent"
+    />
+  </svg>
+</template>
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: 'Heart',
+})
+</script>

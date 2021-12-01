@@ -24,7 +24,7 @@
     "vue": "^3.2.0"
   },
   "dependencies": {
-    "@element-plus/icons-svg": "^0.1.0"
+    "@element-plus/icons-svg": "^0.2.0"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",

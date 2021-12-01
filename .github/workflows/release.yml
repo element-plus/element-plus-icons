@@ -19,7 +19,7 @@ jobs:
       - run: npm i -g pnpm @antfu/ni
       - run: nci
       - run: nr test --if-present
-      - run: npm publish --access public
+      - run: cd packages/vue && npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
       - run: npx conventional-github-releaser -p angular

@@ -1,0 +1,45 @@
+{
+  "name": "@element-plus/icons-vue",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [
+    "icon",
+    "svg",
+    "vue",
+    "element-plus"
+  ],
+  "license": "MIT",
+  "main": "dist/lib/index.js",
+  "module": "dist/es/index.mjs",
+  "types": "dist/types",
+  "unpkg": "dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "esno build/generate.ts && esno build/build.ts && vue-tsc --declaration --emitDeclarationOnly"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "dependencies": {
+    "@element-plus/icons-svg": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/prettier": "^2.4.2",
+    "@vitejs/plugin-vue": "^1.10.1",
+    "camelcase": "^6.2.1",
+    "chalk": "^5.0.0",
+    "esbuild": "^0.14.1",
+    "esno": "^0.12.1",
+    "fast-glob": "^3.2.7",
+    "fs-extra": "^10.0.0",
+    "local-pkg": "^0.4.0",
+    "prettier": "^2.5.0",
+    "rollup": "^2.60.2",
+    "rollup-plugin-esbuild": "^4.7.2",
+    "typescript": "^4.5.2",
+    "vite": "^2.6.14",
+    "vue": "^3.2.23",
+    "vue-tsc": "^0.29.8"
+  }
+}

@@ -1,50 +1,18 @@
 {
-  "name": "@element-plus/icons",
-  "version": "0.0.10-beta.2",
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "unpkg": "lib/index.js",
-  "sideEffects": false,
-  "types": "types/index.d.ts",
-  "scripts": {
-    "serve": "vite",
-    "gen": "node ./scripts/generate.js && yarn prettier",
-    "pub": "sh ./scripts/publish.sh",
-    "prettier": "prettier ./packages -w",
-    "gen-dts": "node ./configs/morph.js",
-    "build": "sh ./scripts/build-comp.sh",
-    "build:entry": "rollup --config ./configs/rollup.config.js"
-  },
-  "keywords": [
-    "icon",
-    "svg",
-    "element-plus"
-  ],
-  "files": ["es", "lib", "types"],
-  "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.4",
-    "@vue/compiler-sfc": "^3.0.2",
-    "esbuild": "^0.8.26",
-    "klaw-sync": "^6.0.0",
-    "ora": "^5.4.1",
-    "prettier": "^2.2.1",
-    "rollup": "^2.35.1",
-    "rollup-plugin-esbuild": "^2.6.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.29.0",
-    "rollup-plugin-vue": "^6.0.0",
-    "svgo": "^2.3.1",
-    "ts-morph": "^11.0.3",
-    "tslib": "^2.0.3",
-    "typescript": "^4.1.3",
-    "vite": "^1.0.0-rc.13",
-    "vue": "^3.1.x"
-  },
+  "name": "@element-plus/icons-monorepo",
   "license": "MIT",
-  "homepage": "https://element-plus.org/",
-  "description": "Icon library for ElementPlus",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/element-plus/element-plus-icons.git"
+  "private": true,
+  "scripts": {
+    "dev": "pnpm run -C playground dev",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0",
+    "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@sxzz/eslint-config": "^1.6.1",
+    "eslint": "^8.3.0",
+    "eslint-define-config": "^1.2.0",
+    "prettier": "^2.5.0",
+    "typescript": "^4.5.2"
   }
 }

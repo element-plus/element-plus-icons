@@ -1,0 +1,8 @@
+{
+  "bumpFiles": [
+    {
+      "filename": "packages/vue/package.json",
+      "type": "json"
+    }
+  ]
+}

@@ -4,5 +4,11 @@
       "filename": "packages/vue/package.json",
       "type": "json"
     }
+  ],
+  "packageFiles": [
+    {
+      "filename": "packages/vue/package.json",
+      "type": "json"
+    }
   ]
 }

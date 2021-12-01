@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "description": "SVG Icon library for Element Plus",
   "homepage": "https://element-plus.org/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/element-plus/element-plus-icons.git"
-  },
-  "license": "MIT",
-  "files": ["*.svg"],
-  "scripts": {
-    "build": ""
-  },
   "keywords": [
     "icon",
     "svg",
     "element-plus"
-  ]
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/element-plus/element-plus-icons.git"
+  },
+  "files": [
+    "*.svg"
+  ],
+  "scripts": {
+    "build": ""
+  }
 }

@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
 
-      - run: cd packages/vue && nr build
+      - run: cd packages/vue && pnpm run build
 
       - run: pnpm publish -r --access public --no-git-checks
         env:

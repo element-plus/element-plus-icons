@@ -23,10 +23,8 @@
   "peerDependencies": {
     "vue": "^3.2.0"
   },
-  "dependencies": {
-    "@element-plus/icons-svg": "^0.2.0"
-  },
   "devDependencies": {
+    "@element-plus/icons-svg": "^0.2.2",
     "@types/fs-extra": "^9.0.13",
     "@types/prettier": "^2.4.2",
     "@vitejs/plugin-vue": "^1.10.1",

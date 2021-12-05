@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/element-plus/element-plus-icons/compare/v0.2.3...v0.2.4) (2021-12-05)
+
+
+### Bug Fixes
+
+* change fill='[#333](https://github.com/element-plus/element-plus-icons/issues/333)' to fill='currentColor' ([d9b1d31](https://github.com/element-plus/element-plus-icons/commit/d9b1d31f4747d7b09bb0e1c60e72f8b232a9d8e2))
+
 ### [0.2.3](https://github.com/element-plus/element-plus-icons/compare/v0.2.2...v0.2.3) (2021-12-04)
 
 

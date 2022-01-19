@@ -2,7 +2,7 @@ import path from 'path'
 import { rollup } from 'rollup'
 import chalk from 'chalk'
 import esbuild from 'rollup-plugin-esbuild'
-import vue from '@vitejs/plugin-vue'
+import vue from 'unplugin-vue/rollup'
 import { emptyDir } from 'fs-extra'
 import { pathOutput, pathSrc } from './paths'
 

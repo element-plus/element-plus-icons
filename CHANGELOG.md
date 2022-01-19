@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/element-plus/element-plus-icons/compare/v0.2.4...v0.2.5) (2022-01-19)
+
+
+### Bug Fixes
+
+* add missing edit-pen svg icon ([#28](https://github.com/element-plus/element-plus-icons/issues/28)) ([a97fa98](https://github.com/element-plus/element-plus-icons/commit/a97fa988211968f0888a5f58aea6e21960750f59))
+* edit-pen ([9adbf58](https://github.com/element-plus/element-plus-icons/commit/9adbf58e1932872d0a50446664180ad6e138c64d))
+
 ### [0.2.4](https://github.com/element-plus/element-plus-icons/compare/v0.2.3...v0.2.4) (2021-12-05)
 
 

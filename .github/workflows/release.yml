@@ -25,9 +25,11 @@ jobs:
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
 
-      - run: cd packages/vue && pnpm run build
+      - name: Build
+        run: cd packages/vue && pnpm run build
 
-      - run: pnpm publish -r --access public --no-git-checks
+      - name: Publish
+        run: pnpm publish -r --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
 

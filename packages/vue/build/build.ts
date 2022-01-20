@@ -36,6 +36,10 @@ const build = async () => {
       name: 'ElementPlusIconsVue',
       globals: { vue: 'Vue' },
     }),
+    bundle.write({
+      format: 'esm',
+      file: path.resolve(pathOutput, 'index.mjs'),
+    }),
   ])
 }
 

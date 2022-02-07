@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.7](https://github.com/element-plus/element-plus-icons/compare/v0.2.6...v0.2.7) (2022-02-07)
+
+
+### Features
+
+* add esm full bundle ([db2a32d](https://github.com/element-plus/element-plus-icons/commit/db2a32d7fbceeda03824c740fb7b096aecd12153))
+
 ### [0.2.6](https://github.com/element-plus/element-plus-icons/compare/v0.2.5...v0.2.6) (2022-01-19)
 
 ### [0.2.5](https://github.com/element-plus/element-plus-icons/compare/v0.2.4...v0.2.5) (2022-01-19)

@@ -8,13 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@element-plus/icons-svg": "^0.2.0",
-    "@element-plus/icons-vue": "^0.2.0",
-    "vue": "^3.2.27"
+    "@element-plus/icons-svg": "workspace:*",
+    "@element-plus/icons-vue": "workspace:*",
+    "vue": "^3.2.31"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.10.2",
-    "typescript": "^4.5.4",
-    "vite": "^2.7.13"
+    "@vitejs/plugin-vue": "^2.2.2",
+    "typescript": "^4.5.5",
+    "vite": "^2.8.4"
   }
 }

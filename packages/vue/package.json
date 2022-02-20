@@ -24,22 +24,22 @@
     "vue": "^3.2.0"
   },
   "devDependencies": {
-    "@element-plus/icons-svg": "^0.2.2",
+    "@element-plus/icons-svg": "^0.2.7",
     "@types/fs-extra": "^9.0.13",
-    "@types/prettier": "^2.4.3",
+    "@types/prettier": "^2.4.4",
     "camelcase": "^6.3.0",
     "chalk": "^5.0.0",
-    "esbuild": "^0.14.11",
-    "esno": "^0.14.0",
+    "esbuild": "^0.14.23",
+    "esno": "^0.14.1",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.0.0",
     "local-pkg": "^0.4.1",
     "prettier": "^2.5.1",
-    "rollup": "^2.64.0",
+    "rollup": "^2.67.3",
     "rollup-plugin-esbuild": "^4.8.2",
-    "typescript": "^4.5.4",
-    "unplugin-vue": "^0.1.1",
-    "vue": "^3.2.27",
-    "vue-tsc": "^0.30.6"
+    "typescript": "^4.5.5",
+    "unplugin-vue": "^0.2.2",
+    "vue": "^3.2.31",
+    "vue-tsc": "^0.31.4"
   }
 }

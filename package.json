@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "pnpm run -C playground dev",
+    "build": "pnpm run build --filter ./packages",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0",
     "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0",
     "format": "prettier --write .",

@@ -21,8 +21,8 @@
   "files": [
     "dist"
   ],
-  "main": "dist/lib/index.js",
-  "module": "dist/es/index.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/types",
   "unpkg": "dist/index.iife.min.js",
   "jsdelivr": "dist/index.iife.min.js",
@@ -47,11 +47,10 @@
     "chalk": "^5.0.1",
     "consola": "^2.15.3",
     "esbuild": "^0.14.39",
+    "esbuild-plugin-globals": "^0.1.1",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
     "prettier": "^2.6.2",
-    "rollup": "^2.74.1",
-    "rollup-plugin-esbuild": "^4.9.1",
     "tsx": "^3.4.0",
     "typescript": "^4.6.4",
     "unplugin-vue": "^2.1.0",

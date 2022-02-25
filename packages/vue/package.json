@@ -15,10 +15,14 @@
   "main": "dist/lib/index.js",
   "module": "dist/es/index.mjs",
   "types": "dist/types",
-  "unpkg": "dist/index.js",
+  "unpkg": "dist/index.iife.min.js",
+  "jsdelivr": "dist/index.iife.min.js",
   "sideEffects": false,
   "scripts": {
-    "build": "esno build/generate.ts && esno build/build.ts && vue-tsc --declaration --emitDeclarationOnly"
+    "build": "pnpm run build:generate && pnpm run build:build && pnpm run build:types",
+    "build:generate": "esno build/generate.ts",
+    "build:build": "esno build/build.ts",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly"
   },
   "peerDependencies": {
     "vue": "^3.2.0"

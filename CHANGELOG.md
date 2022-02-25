@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/element-plus/element-plus-icons/compare/v0.2.7...v1.0.0) (2022-02-25)
+
 ### [0.2.7](https://github.com/element-plus/element-plus-icons/compare/v0.2.6...v0.2.7) (2022-02-07)
 
 

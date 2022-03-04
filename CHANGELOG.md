@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/element-plus/element-plus-icons/compare/v1.0.0...v1.0.1) (2022-03-04)
+
+
+### Features
+
+* add hide icon ([#35](https://github.com/element-plus/element-plus-icons/issues/35)) ([05b3db1](https://github.com/element-plus/element-plus-icons/commit/05b3db196fb2a933365bafc2951ef3838a0ba11a))
+
 ## [1.0.0](https://github.com/element-plus/element-plus-icons/compare/v0.2.7...v1.0.0) (2022-02-25)
 
 ### [0.2.7](https://github.com/element-plus/element-plus-icons/compare/v0.2.6...v0.2.7) (2022-02-07)

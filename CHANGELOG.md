@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/element-plus/element-plus-icons/compare/v1.1.0...v1.1.1) (2022-03-07)
+
+
+### Bug Fixes
+
+* icon color and view box ([05cd32a](https://github.com/element-plus/element-plus-icons/commit/05cd32a0c6f69c905bdc5e3ad799102c7b6eee01))
+
 ## [1.1.0](https://github.com/element-plus/element-plus-icons/compare/v1.0.1...v1.1.0) (2022-03-07)
 
 ### Features

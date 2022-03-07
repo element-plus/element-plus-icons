@@ -17,6 +17,9 @@
     "*.svg"
   ],
   "scripts": {
-    "build": ""
+    "optimize": "svgo -f . -o ."
+  },
+  "devDependencies": {
+    "svgo": "^2.8.0"
   }
 }

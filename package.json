@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "pnpm run -C playground dev",
-    "build": "pnpm run build --filter ./packages",
+    "build": "pnpm run build -C ./packages/vue",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0",
     "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0",
-    "format": "prettier --write .",
+    "format": "prettier --write . && pnpm run optimize -C ./packages/svg",
     "release": "standard-version"
   },
   "devDependencies": {

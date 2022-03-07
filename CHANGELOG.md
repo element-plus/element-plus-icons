@@ -4,43 +4,38 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.0.1](https://github.com/element-plus/element-plus-icons/compare/v1.0.0...v1.0.1) (2022-03-04)
 
-
 ### Features
 
-* add hide icon ([#35](https://github.com/element-plus/element-plus-icons/issues/35)) ([05b3db1](https://github.com/element-plus/element-plus-icons/commit/05b3db196fb2a933365bafc2951ef3838a0ba11a))
+- add hide icon ([#35](https://github.com/element-plus/element-plus-icons/issues/35)) ([05b3db1](https://github.com/element-plus/element-plus-icons/commit/05b3db196fb2a933365bafc2951ef3838a0ba11a))
 
 ## [1.0.0](https://github.com/element-plus/element-plus-icons/compare/v0.2.7...v1.0.0) (2022-02-25)
 
 ### [0.2.7](https://github.com/element-plus/element-plus-icons/compare/v0.2.6...v0.2.7) (2022-02-07)
 
-
 ### Features
 
-* add esm full bundle ([db2a32d](https://github.com/element-plus/element-plus-icons/commit/db2a32d7fbceeda03824c740fb7b096aecd12153))
+- add esm full bundle ([db2a32d](https://github.com/element-plus/element-plus-icons/commit/db2a32d7fbceeda03824c740fb7b096aecd12153))
 
 ### [0.2.6](https://github.com/element-plus/element-plus-icons/compare/v0.2.5...v0.2.6) (2022-01-19)
 
 ### [0.2.5](https://github.com/element-plus/element-plus-icons/compare/v0.2.4...v0.2.5) (2022-01-19)
 
-
 ### Bug Fixes
 
-* add missing edit-pen svg icon ([#28](https://github.com/element-plus/element-plus-icons/issues/28)) ([a97fa98](https://github.com/element-plus/element-plus-icons/commit/a97fa988211968f0888a5f58aea6e21960750f59))
-* edit-pen ([9adbf58](https://github.com/element-plus/element-plus-icons/commit/9adbf58e1932872d0a50446664180ad6e138c64d))
+- add missing edit-pen svg icon ([#28](https://github.com/element-plus/element-plus-icons/issues/28)) ([a97fa98](https://github.com/element-plus/element-plus-icons/commit/a97fa988211968f0888a5f58aea6e21960750f59))
+- edit-pen ([9adbf58](https://github.com/element-plus/element-plus-icons/commit/9adbf58e1932872d0a50446664180ad6e138c64d))
 
 ### [0.2.4](https://github.com/element-plus/element-plus-icons/compare/v0.2.3...v0.2.4) (2021-12-05)
 
-
 ### Bug Fixes
 
-* change fill='[#333](https://github.com/element-plus/element-plus-icons/issues/333)' to fill='currentColor' ([d9b1d31](https://github.com/element-plus/element-plus-icons/commit/d9b1d31f4747d7b09bb0e1c60e72f8b232a9d8e2))
+- change fill='[#333](https://github.com/element-plus/element-plus-icons/issues/333)' to fill='currentColor' ([d9b1d31](https://github.com/element-plus/element-plus-icons/commit/d9b1d31f4747d7b09bb0e1c60e72f8b232a9d8e2))
 
 ### [0.2.3](https://github.com/element-plus/element-plus-icons/compare/v0.2.2...v0.2.3) (2021-12-04)
 
-
 ### Bug Fixes
 
-* ignore entry file ([104f9d9](https://github.com/element-plus/element-plus-icons/commit/104f9d9a4be8d540ab27958730bd3d08563decc5))
+- ignore entry file ([104f9d9](https://github.com/element-plus/element-plus-icons/commit/104f9d9a4be8d540ab27958730bd3d08563decc5))
 
 ### [0.2.2](https://github.com/element-plus/element-plus-icons/compare/v0.2.1...v0.2.2) (2021-12-01)
 

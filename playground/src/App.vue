@@ -1,15 +1,20 @@
 <template>
   <div>
-    <AddLocation style="width: 36px; height: 36px" />
+    <component
+      :is="Icon"
+      v-for="(Icon, key) in Icons"
+      :key="key"
+      class="icon"
+    />
   </div>
 </template>
 
-<script lang="ts">
-import { AddLocation } from '@element-plus/icons-vue'
-
-export default {
-  components: {
-    AddLocation,
-  },
-}
+<script lang="ts" setup>
+import * as Icons from '@element-plus/icons-vue'
 </script>
+
+<style>
+.icon {
+  height: 48px;
+}
+</style>

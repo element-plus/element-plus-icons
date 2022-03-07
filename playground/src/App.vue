@@ -16,5 +16,6 @@ import * as Icons from '@element-plus/icons-vue'
 <style>
 .icon {
   height: 48px;
+  color: #409eff;
 }
 </style>

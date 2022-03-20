@@ -14,8 +14,16 @@
 
 # Element Plus Icons
 
-- `@element-plus/icons-svg` raw svg files
-- `@element-plus/icons-vue` vue components
+[![Unit Test](https://github.com/element-plus/element-plus-icons/actions/workflows/unit-test.yml/badge.svg)](https://github.com/element-plus/element-plus-icons/actions/workflows/unit-test.yml)
+
+- [`@element-plus/icons-svg`](https://www.npmjs.com/package/@element-plus/icons-svg) raw svg files
+- [`@element-plus/icons-vue`](https://www.npmjs.com/package/@element-plus/icons-vue) vue components
+
+## Preview
+
+- [Documentation](https://element-plus.org/en-US/component/icon.html)
+- [Icônes](https://icones.js.org/collection/ep)
+- [Iconify](https://icon-sets.iconify.design/ep/)
 
 ## Auto import
 

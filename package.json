@@ -13,8 +13,8 @@
   "devDependencies": {
     "@sxzz/eslint-config": "^1.7.0",
     "eslint": "^8.11.0",
-    "eslint-define-config": "^1.2.5",
-    "prettier": "^2.5.1",
+    "eslint-define-config": "^1.3.0",
+    "prettier": "^2.6.0",
     "standard-version": "^9.3.2",
     "typescript": "^4.6.2"
   }

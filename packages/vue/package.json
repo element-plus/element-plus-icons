@@ -33,6 +33,7 @@
     "@types/prettier": "^2.4.4",
     "camelcase": "^6.3.0",
     "chalk": "^5.0.1",
+    "consola": "^2.15.3",
     "esbuild": "^0.14.27",
     "esno": "^0.14.1",
     "fast-glob": "^3.2.11",

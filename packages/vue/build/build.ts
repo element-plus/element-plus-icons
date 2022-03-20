@@ -1,4 +1,5 @@
 import path from 'path'
+import consola from 'consola'
 import { rollup } from 'rollup'
 import chalk from 'chalk'
 import esbuild from 'rollup-plugin-esbuild'
@@ -61,8 +62,8 @@ const buildUnbundled = async () => {
 }
 
 ;(async () => {
-  console.info(chalk.blue('cleaning dist...'))
+  consola.info(chalk.blue('cleaning dist...'))
   await emptyDir(pathOutput)
-  console.info(chalk.blue('building...'))
+  consola.info(chalk.blue('building...'))
   await Promise.all([buildUnbundled(), buildBundled(true), buildBundled(false)])
 })()

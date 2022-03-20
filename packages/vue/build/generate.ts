@@ -1,6 +1,7 @@
 import path from 'path'
 import { readFile, writeFile } from 'fs/promises'
 import { emptyDir } from 'fs-extra'
+import consola from 'consola'
 import camelcase from 'camelcase'
 import glob from 'fast-glob'
 import { getPackageInfo } from 'local-pkg'
@@ -62,11 +63,11 @@ const generateEntry = async (files: string[]) => {
 }
 
 ;(async () => {
-  console.info(chalk.blue('generating vue components'))
+  consola.info(chalk.blue('generating vue components'))
   await emptyDir(pathSrc)
   const files = await getSvgFiles()
-  console.info(chalk.blue('generating vue files'))
+  consola.info(chalk.blue('generating vue files'))
   await Promise.all(files.map((file) => transformToVueComponent(file)))
-  console.info(chalk.blue('generating entry file'))
+  consola.info(chalk.blue('generating entry file'))
   await generateEntry(files)
 })()

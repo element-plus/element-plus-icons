@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/element-plus/element-plus-icons/compare/v1.1.3...v1.1.4) (2022-03-21)
+
+
+### Features
+
+* add consola ([e9898f8](https://github.com/element-plus/element-plus-icons/commit/e9898f8e2fe9c62221571f8d28607c264cd9ff27))
+
 ### [1.1.3](https://github.com/element-plus/element-plus-icons/compare/v1.1.2...v1.1.3) (2022-03-15)
 
 ### [1.1.2](https://github.com/element-plus/element-plus-icons/compare/v1.1.1...v1.1.2) (2022-03-14)

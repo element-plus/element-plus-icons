@@ -13,7 +13,8 @@
     "target": "ES2018",
     "sourceMap": true,
     "lib": ["ES2018", "DOM"],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules"]

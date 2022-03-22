@@ -1,7 +1,7 @@
 {
   "name": "@element-plus/icons-monorepo",
-  "license": "MIT",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "pnpm run -C playground dev",
     "build": "pnpm run build -C ./packages/vue",

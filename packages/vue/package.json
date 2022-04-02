@@ -43,17 +43,17 @@
     "camelcase": "^6.3.0",
     "chalk": "^5.0.1",
     "consola": "^2.15.3",
-    "esbuild": "^0.14.27",
+    "esbuild": "^0.14.30",
     "esno": "^0.14.1",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.0.1",
     "local-pkg": "^0.4.1",
-    "prettier": "^2.6.0",
+    "prettier": "^2.6.2",
     "rollup": "^2.70.1",
     "rollup-plugin-esbuild": "^4.8.2",
-    "typescript": "^4.6.2",
-    "unplugin-vue": "^1.0.1",
+    "typescript": "^4.6.3",
+    "unplugin-vue": "^2.0.0",
     "vue": "^3.2.31",
-    "vue-tsc": "^0.33.6"
+    "vue-tsc": "^0.33.9"
   }
 }

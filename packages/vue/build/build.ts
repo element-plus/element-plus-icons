@@ -1,69 +1,67 @@
 import path from 'path'
 import consola from 'consola'
-import { rollup } from 'rollup'
 import chalk from 'chalk'
-import esbuild from 'rollup-plugin-esbuild'
-import vue from 'unplugin-vue/rollup'
+import { build } from 'esbuild'
+import GlobalsPlugin from 'esbuild-plugin-globals'
+import vue from 'unplugin-vue/esbuild'
 import { emptyDir } from 'fs-extra'
 import { pathOutput, pathSrc } from './paths'
+import type { BuildOptions, Format } from 'esbuild'
 
-const getBundle = (minify: boolean) =>
-  rollup({
-    input: [path.resolve(pathSrc, 'index.ts')],
-    plugins: [
-      vue(),
-      esbuild({
-        target: 'es2018',
+const buildBundle = async () => {
+  const getBuildOptions = (format: Format) => {
+    const options: BuildOptions = {
+      entryPoints: [path.resolve(pathSrc, 'index.ts')],
+      target: 'es2018',
+      platform: 'neutral',
+      plugins: [vue()],
+      bundle: true,
+      format,
+    }
+    if (format === 'iife') {
+      options.plugins.push(
+        GlobalsPlugin({
+          vue: 'Vue',
+        })
+      )
+    } else {
+      options.external = ['vue']
+    }
+
+    return options
+  }
+  const doBuild = async (minify: boolean) => {
+    await Promise.all([
+      build({
+        ...getBuildOptions('esm'),
+        outfile: path.resolve(pathOutput, `index${minify ? '.min' : ''}.mjs`),
         minify,
+        sourcemap: minify,
       }),
-    ],
-    external: ['vue'],
-  })
-
-const buildBundled = async (minify: boolean) => {
-  const bundle = await getBundle(minify)
-  const tasks = [
-    bundle.write({
-      format: 'iife',
-      file: path.resolve(pathOutput, `index.iife${minify ? '.min' : ''}.js`),
-      name: 'ElementPlusIconsVue',
-      globals: { vue: 'Vue' },
-    }),
-  ]
-  if (!minify)
-    tasks.push(
-      bundle.write({
-        format: 'cjs',
-        file: path.resolve(pathOutput, `index${minify ? '.min' : ''}.js`),
-        globals: { vue: 'Vue' },
+      build({
+        ...getBuildOptions('iife'),
+        outfile: path.resolve(
+          pathOutput,
+          `index.iife${minify ? '.min' : ''}.js`
+        ),
+        minify,
+        sourcemap: minify,
       }),
-      bundle.write({
-        format: 'esm',
-        file: path.resolve(pathOutput, `index${minify ? '.min' : ''}.mjs`),
-      })
-    )
-  await Promise.all(tasks)
-}
+      build({
+        ...getBuildOptions('cjs'),
+        outfile: path.resolve(pathOutput, `index${minify ? '.min' : ''}.js`),
+        minify,
+        sourcemap: minify,
+      }),
+    ])
+  }
 
-const buildUnbundled = async () => {
-  const bundle = await getBundle(false)
-  bundle.write({
-    format: 'es',
-    dir: path.resolve(pathOutput, 'es'),
-    preserveModules: true,
-    entryFileNames: '[name].mjs',
-  })
-  bundle.write({
-    format: 'cjs',
-    dir: path.resolve(pathOutput, 'lib'),
-    preserveModules: true,
-    exports: 'named',
-  })
+  return Promise.all([doBuild(true), doBuild(false)])
 }
 
 ;(async () => {
   consola.info(chalk.blue('cleaning dist...'))
   await emptyDir(pathOutput)
   consola.info(chalk.blue('building...'))
-  await Promise.all([buildUnbundled(), buildBundled(true), buildBundled(false)])
+  await buildBundle()
 })()

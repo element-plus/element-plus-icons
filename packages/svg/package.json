@@ -9,13 +9,13 @@
   ],
   "license": "MIT",
   "homepage": "https://element-plus.org/",
+  "bugs": {
+    "url": "https://github.com/element-plus/element-plus-icons/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/element-plus/element-plus-icons.git",
     "directory": "packages/svg"
-  },
-  "bugs": {
-    "url": "https://github.com/element-plus/element-plus-icons/issues"
   },
   "files": [
     "*.svg"

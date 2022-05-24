@@ -4,15 +4,21 @@ import { emptyDir } from 'fs-extra'
 import consola from 'consola'
 import camelcase from 'camelcase'
 import glob from 'fast-glob'
-import { getPackageInfo } from 'local-pkg'
 import { format } from 'prettier'
 import chalk from 'chalk'
+import findWorkspaceDir from '@pnpm/find-workspace-dir'
+import findWorkspacePackages from '@pnpm/find-workspace-packages'
 import { pathSrc } from './paths'
 import type { BuiltInParserName } from 'prettier'
 
 const getSvgFiles = async () => {
-  const { rootPath } = await getPackageInfo('@element-plus/icons-svg')
-  return glob('*.svg', { cwd: rootPath, absolute: true })
+  const pkgs = await findWorkspacePackages(
+    await findWorkspaceDir(process.cwd())
+  )
+  const pkg = pkgs.find(
+    (pkg) => pkg.manifest.name === '@element-plus/icons-svg'
+  )
+  return glob('*.svg', { cwd: pkg.dir, absolute: true })
 }
 
 const getName = (file: string) => {

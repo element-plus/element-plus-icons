@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0-beta.0](https://github.com/element-plus/element-plus-icons/compare/v1.1.4...v2.0.0-beta.0) (2022-05-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* use esbuild (#36)
+
+### Bug Fixes
+
+* skip lib check ([faa8040](https://github.com/element-plus/element-plus-icons/commit/faa8040fce69e2ad6b88b8827210fbf9379fa8fe))
+
+
+### build
+
+* use esbuild ([#36](https://github.com/element-plus/element-plus-icons/issues/36)) ([fe9150a](https://github.com/element-plus/element-plus-icons/commit/fe9150ad2fa5a8a26e851b6a44d30a91137b1844))
+
 ### [1.1.4](https://github.com/element-plus/element-plus-icons/compare/v1.1.3...v1.1.4) (2022-03-21)
 
 

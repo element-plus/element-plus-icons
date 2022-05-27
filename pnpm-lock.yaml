@@ -26,7 +26,7 @@ importers:
 
   packages/vue:
     specifiers:
-      '@element-plus/icons-svg': ^1.1.4
+      '@element-plus/icons-svg': workspace:*
       '@pnpm/find-workspace-dir': ^4.0.1
       '@pnpm/find-workspace-packages': ^4.0.7
       '@pnpm/logger': ^4.0.0

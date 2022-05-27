@@ -24,6 +24,7 @@ const buildBundle = async () => {
           vue: 'Vue',
         })
       )
+      options.globalName = 'ElementPlusIconsVue'
     } else {
       options.external = ['vue']
     }

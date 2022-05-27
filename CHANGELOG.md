@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0-beta.1](https://github.com/element-plus/element-plus-icons/compare/v2.0.0-beta.0...v2.0.0-beta.1) (2022-05-27)
+
+
+### Bug Fixes
+
+* **vue:** add global name ([fc8976c](https://github.com/element-plus/element-plus-icons/commit/fc8976cc7fc0612bfb7a66ed94e7141b055a0f01))
+
 ## [2.0.0-beta.0](https://github.com/element-plus/element-plus-icons/compare/v1.1.4...v2.0.0-beta.0) (2022-05-24)
 
 

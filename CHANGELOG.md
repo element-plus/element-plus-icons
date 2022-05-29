@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0-beta.2](https://github.com/element-plus/element-plus-icons/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2022-05-29)
+
+
+### Features
+
+* add install function ([a9c2b53](https://github.com/element-plus/element-plus-icons/commit/a9c2b530641f14d6c10ee25e96ffa4d9c31c1c65))
+
 ## [2.0.0-beta.1](https://github.com/element-plus/element-plus-icons/compare/v2.0.0-beta.0...v2.0.0-beta.1) (2022-05-27)
 
 

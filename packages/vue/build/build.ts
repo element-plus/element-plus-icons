@@ -19,7 +19,7 @@ const buildBundle = async () => {
       format,
     }
     if (format === 'iife') {
-      options.plugins.push(
+      options.plugins!.push(
         GlobalsPlugin({
           vue: 'Vue',
         })
@@ -35,7 +35,7 @@ const buildBundle = async () => {
     await Promise.all([
       build({
         ...getBuildOptions('esm'),
-        outfile: path.resolve(pathOutput, `index${minify ? '.min' : ''}.mjs`),
+        outfile: path.resolve(pathOutput, `index${minify ? '.min' : ''}.js`),
         minify,
         sourcemap: minify,
       }),
@@ -50,7 +50,7 @@ const buildBundle = async () => {
       }),
       build({
         ...getBuildOptions('cjs'),
-        outfile: path.resolve(pathOutput, `index${minify ? '.min' : ''}.js`),
+        outfile: path.resolve(pathOutput, `index${minify ? '.min' : ''}.cjs`),
         minify,
         sourcemap: minify,
       }),
@@ -60,9 +60,7 @@ const buildBundle = async () => {
   return Promise.all([doBuild(true), doBuild(false)])
 }
 
-;(async () => {
-  consola.info(chalk.blue('cleaning dist...'))
-  await emptyDir(pathOutput)
-  consola.info(chalk.blue('building...'))
-  await buildBundle()
-})()
+consola.info(chalk.blue('cleaning dist...'))
+await emptyDir(pathOutput)
+consola.info(chalk.blue('building...'))
+await buildBundle()

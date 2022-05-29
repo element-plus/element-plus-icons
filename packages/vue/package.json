@@ -2,6 +2,7 @@
   "name": "@element-plus/icons-vue",
   "version": "2.0.0-beta.1",
   "description": "Vue components of Element Plus Icons collection.",
+  "type": "module",
   "keywords": [
     "icon",
     "svg",
@@ -21,9 +22,16 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/types",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/types",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./*": "./*"
+  },
   "unpkg": "dist/index.iife.min.js",
   "jsdelivr": "dist/index.iife.min.js",
   "sideEffects": false,

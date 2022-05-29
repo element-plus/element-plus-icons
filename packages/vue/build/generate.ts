@@ -1,6 +1,6 @@
 import path from 'path'
 import { readFile, writeFile } from 'fs/promises'
-import { emptyDir } from 'fs-extra'
+import { emptyDir, ensureDir } from 'fs-extra'
 import consola from 'consola'
 import camelcase from 'camelcase'
 import glob from 'fast-glob'
@@ -8,16 +8,19 @@ import { format } from 'prettier'
 import chalk from 'chalk'
 import findWorkspaceDir from '@pnpm/find-workspace-dir'
 import findWorkspacePackages from '@pnpm/find-workspace-packages'
-import { pathSrc } from './paths'
+import { pathComponents } from './paths'
+
 import type { BuiltInParserName } from 'prettier'
 
 const getSvgFiles = async () => {
-  const pkgs = await findWorkspacePackages(
-    await findWorkspaceDir(process.cwd())
+  const pkgs = await // @ts-expect-error
+  (findWorkspacePackages.default as typeof findWorkspacePackages)(
+    // @ts-expect-error
+    (await findWorkspaceDir.default(process.cwd()))!
   )
   const pkg = pkgs.find(
     (pkg) => pkg.manifest.name === '@element-plus/icons-svg'
-  )
+  )!
   return glob('*.svg', { cwd: pkg.dir, absolute: true })
 }
 
@@ -52,7 +55,7 @@ ${content}
 </script>`,
     'vue'
   )
-  writeFile(path.resolve(pathSrc, `${filename}.vue`), vue, 'utf-8')
+  writeFile(path.resolve(pathComponents, `${filename}.vue`), vue, 'utf-8')
 }
 
 const generateEntry = async (files: string[]) => {
@@ -64,15 +67,16 @@ const generateEntry = async (files: string[]) => {
       })
       .join('\n')
   )
-  await writeFile(path.resolve(pathSrc, 'index.ts'), code, 'utf-8')
+  await writeFile(path.resolve(pathComponents, 'index.ts'), code, 'utf-8')
 }
 
-;(async () => {
-  consola.info(chalk.blue('generating vue components'))
-  await emptyDir(pathSrc)
-  const files = await getSvgFiles()
-  consola.info(chalk.blue('generating vue files'))
-  await Promise.all(files.map((file) => transformToVueComponent(file)))
-  consola.info(chalk.blue('generating entry file'))
-  await generateEntry(files)
-})()
+consola.info(chalk.blue('generating vue components'))
+await ensureDir(pathComponents)
+await emptyDir(pathComponents)
+const files = await getSvgFiles()
+
+consola.info(chalk.blue('generating vue files'))
+await Promise.all(files.map((file) => transformToVueComponent(file)))
+
+consola.info(chalk.blue('generating entry file'))
+await generateEntry(files)

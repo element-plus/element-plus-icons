@@ -1,16 +1,16 @@
 <template>
-  <div>
-    <component
-      :is="Icon"
-      v-for="(Icon, key) in Icons"
-      :key="key"
-      class="icon"
-    />
-  </div>
+  <component :is="Icon" v-for="(Icon, key) in icons" :key="key" class="icon" />
+  <hr />
+  <component
+    :is="`ElIcon${key}`"
+    v-for="key in Object.keys(icons)"
+    :key="key"
+    class="icon"
+  />
 </template>
 
 <script lang="ts" setup>
-import * as Icons from '@element-plus/icons-vue'
+import { icons } from '@element-plus/icons-vue'
 </script>
 
 <style>

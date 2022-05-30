@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2021",
+    "module": "ESNext",
+    "lib": ["ES2021"],
+    "baseUrl": ".",
+    "strict": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "include": ["build"]
+}

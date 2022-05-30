@@ -2,7 +2,6 @@
   "compilerOptions": {
     "module": "ESNext",
     "declaration": true,
-    "emitDeclarationOnly": true,
     "baseUrl": ".",
     "declarationDir": "./dist/types",
     "strict": true,
@@ -14,8 +13,9 @@
     "sourceMap": true,
     "lib": ["ES2018", "DOM"],
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": []
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules"]
+  "references": [{ "path": "./tsconfig.build.json" }]
 }

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/element-plus/element-plus-icons/compare/v2.0.0...v2.0.1) (2022-05-30)
+
+
+### Bug Fixes
+
+* **vue:** types ([a2fa1e9](https://github.com/element-plus/element-plus-icons/commit/a2fa1e91c2ed2c59fe2504b4f4db26c4583201ab))
+
 ## [2.0.0](https://github.com/element-plus/element-plus-icons/compare/v2.0.0-beta.2...v2.0.0) (2022-05-29)
 
 ## [2.0.0-beta.2](https://github.com/element-plus/element-plus-icons/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2022-05-29)

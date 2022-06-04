@@ -49,10 +49,10 @@ const transformToVueComponent = async (file: string) => {
 ${content}
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
+import type { DefineComponent } from 'vue'
+export default ({
   name: "${componentName}",
-})
+}) as DefineComponent
 </script>`,
     'vue'
   )

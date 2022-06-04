@@ -30,6 +30,10 @@
       "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     },
+    "./global": {
+      "require": "./dist/global.cjs",
+      "import": "./dist/global.js"
+    },
     "./*": "./*"
   },
   "unpkg": "dist/index.iife.min.js",

@@ -5,18 +5,31 @@ import { build } from 'esbuild'
 import GlobalsPlugin from 'esbuild-plugin-globals'
 import vue from 'unplugin-vue/esbuild'
 import { emptyDir } from 'fs-extra'
+import { version } from '../package.json'
 import { pathOutput, pathSrc } from './paths'
 import type { BuildOptions, Format } from 'esbuild'
 
 const buildBundle = async () => {
   const getBuildOptions = (format: Format) => {
     const options: BuildOptions = {
-      entryPoints: [path.resolve(pathSrc, 'index.ts')],
+      entryPoints: [
+        path.resolve(pathSrc, 'index.ts'),
+        path.resolve(pathSrc, 'global.ts'),
+      ],
       target: 'es2018',
       platform: 'neutral',
-      plugins: [vue()],
+      plugins: [
+        vue({
+          isProduction: true,
+        }),
+      ],
       bundle: true,
       format,
+      minifySyntax: true,
+      banner: {
+        js: `/*! Element Plus Icons Vue v${version} */\n`,
+      },
+      outdir: pathOutput,
     }
     if (format === 'iife') {
       options.plugins!.push(
@@ -35,22 +48,20 @@ const buildBundle = async () => {
     await Promise.all([
       build({
         ...getBuildOptions('esm'),
-        outfile: path.resolve(pathOutput, `index${minify ? '.min' : ''}.js`),
+        entryNames: `[name]${minify ? '.min' : ''}`,
         minify,
         sourcemap: minify,
       }),
       build({
         ...getBuildOptions('iife'),
-        outfile: path.resolve(
-          pathOutput,
-          `index.iife${minify ? '.min' : ''}.js`
-        ),
+        entryNames: `[name].iife${minify ? '.min' : ''}`,
         minify,
         sourcemap: minify,
       }),
       build({
         ...getBuildOptions('cjs'),
-        outfile: path.resolve(pathOutput, `index${minify ? '.min' : ''}.cjs`),
+        entryNames: `[name]${minify ? '.min' : ''}`,
+        outExtension: { '.js': '.cjs' },
         minify,
         sourcemap: minify,
       }),

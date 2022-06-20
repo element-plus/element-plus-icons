@@ -8,14 +8,14 @@
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0",
     "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0",
     "format": "prettier --write . && pnpm run -C ./packages/svg optimize",
-    "release": "standard-version"
+    "release": "bumpp packages/*/package.json"
   },
   "devDependencies": {
     "@sxzz/eslint-config": "^2.2.1",
+    "bumpp": "^8.2.1",
     "eslint": "^8.16.0",
     "eslint-define-config": "^1.4.1",
     "prettier": "^2.6.2",
-    "standard-version": "^9.5.0",
     "typescript": "^4.7.2"
   }
 }

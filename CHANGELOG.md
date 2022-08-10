@@ -8,51 +8,58 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [2.0.3](https://github.com/element-plus/element-plus-icons/compare/v2.0.2...v2.0.3) (2022-06-04)
 
+
 ### Bug Fixes
 
-- **vue:** types ([a31217f](https://github.com/element-plus/element-plus-icons/commit/a31217fb58de0e924f0ecd69577a36c307f264e7))
+* **vue:** types ([a31217f](https://github.com/element-plus/element-plus-icons/commit/a31217fb58de0e924f0ecd69577a36c307f264e7))
 
 ### [2.0.2](https://github.com/element-plus/element-plus-icons/compare/v2.0.1...v2.0.2) (2022-06-04)
 
 ### [2.0.1](https://github.com/element-plus/element-plus-icons/compare/v2.0.0...v2.0.1) (2022-05-30)
 
+
 ### Bug Fixes
 
-- **vue:** types ([a2fa1e9](https://github.com/element-plus/element-plus-icons/commit/a2fa1e91c2ed2c59fe2504b4f4db26c4583201ab))
+* **vue:** types ([a2fa1e9](https://github.com/element-plus/element-plus-icons/commit/a2fa1e91c2ed2c59fe2504b4f4db26c4583201ab))
 
 ## [2.0.0](https://github.com/element-plus/element-plus-icons/compare/v2.0.0-beta.2...v2.0.0) (2022-05-29)
 
 ## [2.0.0-beta.2](https://github.com/element-plus/element-plus-icons/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2022-05-29)
 
+
 ### Features
 
-- add install function ([a9c2b53](https://github.com/element-plus/element-plus-icons/commit/a9c2b530641f14d6c10ee25e96ffa4d9c31c1c65))
+* add install function ([a9c2b53](https://github.com/element-plus/element-plus-icons/commit/a9c2b530641f14d6c10ee25e96ffa4d9c31c1c65))
 
 ## [2.0.0-beta.1](https://github.com/element-plus/element-plus-icons/compare/v2.0.0-beta.0...v2.0.0-beta.1) (2022-05-27)
 
+
 ### Bug Fixes
 
-- **vue:** add global name ([fc8976c](https://github.com/element-plus/element-plus-icons/commit/fc8976cc7fc0612bfb7a66ed94e7141b055a0f01))
+* **vue:** add global name ([fc8976c](https://github.com/element-plus/element-plus-icons/commit/fc8976cc7fc0612bfb7a66ed94e7141b055a0f01))
 
 ## [2.0.0-beta.0](https://github.com/element-plus/element-plus-icons/compare/v1.1.4...v2.0.0-beta.0) (2022-05-24)
 
+
 ### ⚠ BREAKING CHANGES
 
-- use esbuild (#36)
+* use esbuild (#36)
 
 ### Bug Fixes
 
-- skip lib check ([faa8040](https://github.com/element-plus/element-plus-icons/commit/faa8040fce69e2ad6b88b8827210fbf9379fa8fe))
+* skip lib check ([faa8040](https://github.com/element-plus/element-plus-icons/commit/faa8040fce69e2ad6b88b8827210fbf9379fa8fe))
+
 
 ### build
 
-- use esbuild ([#36](https://github.com/element-plus/element-plus-icons/issues/36)) ([fe9150a](https://github.com/element-plus/element-plus-icons/commit/fe9150ad2fa5a8a26e851b6a44d30a91137b1844))
+* use esbuild ([#36](https://github.com/element-plus/element-plus-icons/issues/36)) ([fe9150a](https://github.com/element-plus/element-plus-icons/commit/fe9150ad2fa5a8a26e851b6a44d30a91137b1844))
 
 ### [1.1.4](https://github.com/element-plus/element-plus-icons/compare/v1.1.3...v1.1.4) (2022-03-21)
 
+
 ### Features
 
-- add consola ([e9898f8](https://github.com/element-plus/element-plus-icons/commit/e9898f8e2fe9c62221571f8d28607c264cd9ff27))
+* add consola ([e9898f8](https://github.com/element-plus/element-plus-icons/commit/e9898f8e2fe9c62221571f8d28607c264cd9ff27))
 
 ### [1.1.3](https://github.com/element-plus/element-plus-icons/compare/v1.1.2...v1.1.3) (2022-03-15)
 
@@ -60,9 +67,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.1.1](https://github.com/element-plus/element-plus-icons/compare/v1.1.0...v1.1.1) (2022-03-07)
 
+
 ### Bug Fixes
 
-- icon color and view box ([05cd32a](https://github.com/element-plus/element-plus-icons/commit/05cd32a0c6f69c905bdc5e3ad799102c7b6eee01))
+* icon color and view box ([05cd32a](https://github.com/element-plus/element-plus-icons/commit/05cd32a0c6f69c905bdc5e3ad799102c7b6eee01))
 
 ## [1.1.0](https://github.com/element-plus/element-plus-icons/compare/v1.0.1...v1.1.0) (2022-03-07)
 

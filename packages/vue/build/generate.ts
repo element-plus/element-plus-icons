@@ -1,5 +1,5 @@
-import path from 'path'
-import { readFile, writeFile } from 'fs/promises'
+import path from 'node:path'
+import { readFile, writeFile } from 'node:fs/promises'
 import { emptyDir, ensureDir } from 'fs-extra'
 import consola from 'consola'
 import camelcase from 'camelcase'

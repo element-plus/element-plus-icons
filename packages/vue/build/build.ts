@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'node:path'
 import consola from 'consola'
 import chalk from 'chalk'
 import { build } from 'esbuild'
@@ -9,7 +9,7 @@ import { version } from '../package.json'
 import { pathOutput, pathSrc } from './paths'
 import type { BuildOptions, Format } from 'esbuild'
 
-const buildBundle = async () => {
+const buildBundle = () => {
   const getBuildOptions = (format: Format) => {
     const options: BuildOptions = {
       entryPoints: [
@@ -21,6 +21,7 @@ const buildBundle = async () => {
       plugins: [
         vue({
           isProduction: true,
+          sourceMap: false,
         }),
       ],
       bundle: true,
@@ -50,20 +51,17 @@ const buildBundle = async () => {
         ...getBuildOptions('esm'),
         entryNames: `[name]${minify ? '.min' : ''}`,
         minify,
-        sourcemap: minify,
       }),
       build({
         ...getBuildOptions('iife'),
         entryNames: `[name].iife${minify ? '.min' : ''}`,
         minify,
-        sourcemap: minify,
       }),
       build({
         ...getBuildOptions('cjs'),
         entryNames: `[name]${minify ? '.min' : ''}`,
         outExtension: { '.js': '.cjs' },
         minify,
-        sourcemap: minify,
       }),
     ])
   }

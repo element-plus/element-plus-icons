@@ -12,11 +12,11 @@
     "release": "bumpp packages/*/package.json"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^2.2.2",
+    "@sxzz/eslint-config": "^2.4.4",
     "bumpp": "^8.2.1",
-    "eslint": "^8.18.0",
-    "eslint-define-config": "^1.5.1",
+    "eslint": "^8.25.0",
+    "eslint-define-config": "^1.7.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.4"
   }
 }

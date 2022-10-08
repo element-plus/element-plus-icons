@@ -1,6 +1,7 @@
 {
   "name": "@element-plus/icons-monorepo",
   "private": true,
+  "packageManager": "pnpm@7.13.2",
   "license": "MIT",
   "scripts": {
     "dev": "pnpm run -C playground dev",

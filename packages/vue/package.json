@@ -24,22 +24,27 @@
   ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
     },
     "./global": {
       "require": "./dist/global.cjs",
-      "import": "./dist/global.js"
+      "import": "./dist/global.js",
+      "types": "./dist/types/global.d.ts"
     },
     "./*": "./*"
   },
   "typesVersions": {
     "*": {
-      "*": [
-        "./dist/types/*"
+      ".": [
+        "./dist/types/index.d.ts"
+      ],
+      "global": [
+        "./dist/types/global.d.ts"
       ]
     }
   },

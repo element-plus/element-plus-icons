@@ -24,23 +24,17 @@
   ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "types": "./dist/types/index.ts"
     },
     "./global": {
       "require": "./dist/global.cjs",
-      "import": "./dist/global.js"
-    },
-    "./*": "./*"
-  },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/types/*"
-      ]
+      "import": "./dist/global.js",
+      "types": "./dist/types/global.ts"
     }
   },
   "unpkg": "dist/index.iife.min.js",

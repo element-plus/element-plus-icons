@@ -25,6 +25,7 @@
 - [Icônes](https://icones.js.org/collection/ep)
 - [Iconify](https://icon-sets.iconify.design/ep/)
 
-## Auto import
 
-🎉 The best practices of Element Plus Icons is [here](https://github.com/sxzz/element-plus-best-practices/blob/main/vite.config.ts).
+## License
+
+[MIT](./LICENSE) License © 2020-PRESENT Element Plus

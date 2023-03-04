@@ -6,17 +6,15 @@ import camelcase from 'camelcase'
 import glob from 'fast-glob'
 import { format } from 'prettier'
 import chalk from 'chalk'
-import findWorkspaceDir from '@pnpm/find-workspace-dir'
-import findWorkspacePackages from '@pnpm/find-workspace-packages'
+import { findWorkspaceDir } from '@pnpm/find-workspace-dir'
+import { findWorkspacePackages } from '@pnpm/find-workspace-packages'
 import { pathComponents } from './paths'
 
 import type { BuiltInParserName } from 'prettier'
 
 const getSvgFiles = async () => {
-  const pkgs = await // @ts-expect-error
-  (findWorkspacePackages.default as typeof findWorkspacePackages)(
-    // @ts-expect-error
-    (await findWorkspaceDir.default(process.cwd()))!
+  const pkgs = await findWorkspacePackages(
+    (await findWorkspaceDir(process.cwd()))!
   )
   const pkg = pkgs.find(
     (pkg) => pkg.manifest.name === '@element-plus/icons-svg'

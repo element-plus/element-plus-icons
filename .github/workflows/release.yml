@@ -1,5 +1,8 @@
 name: Release
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
@@ -13,28 +16,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-          registry-url: https://registry.npmjs.org/
-
-      - name: Cache ~/.pnpm-store
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-pnpm-store
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-
-            ${{ runner.os }}-${{ matrix.node-version }}-test-
-            ${{ runner.os }}-
-
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: latest
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+          cache: pnpm
 
       - name: Install deps
         run: pnpm i --frozen-lockfile

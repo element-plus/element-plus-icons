@@ -24,13 +24,15 @@
   ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     },
     "./global": {
+      "types": "./dist/types/global.d.ts",
       "require": "./dist/global.cjs",
       "import": "./dist/global.js"
     },
@@ -39,6 +41,7 @@
   "typesVersions": {
     "*": {
       "*": [
+        "./*",
         "./dist/types/*"
       ]
     }

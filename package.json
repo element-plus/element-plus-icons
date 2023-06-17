@@ -2,22 +2,22 @@
   "name": "@element-plus/icons-monorepo",
   "version": "2.1.0",
   "private": true,
-  "packageManager": "pnpm@7.13.2",
+  "packageManager": "pnpm@8.6.2",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "dev": "pnpm run -C playground dev",
     "build": "pnpm run -C ./packages/vue build",
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0",
-    "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0",
+    "lint": "eslint .",
+    "lint:fix": "pnpm run lint --fix",
     "format": "prettier --write . && pnpm run -C ./packages/svg optimize",
     "release": "bumpp -r"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^2.4.5",
-    "bumpp": "^9.0.0",
-    "eslint": "^8.35.0",
-    "eslint-define-config": "^1.15.0",
-    "prettier": "^2.8.4",
-    "typescript": "^4.9.5"
+    "@sxzz/eslint-config": "^3.0.0",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.3"
   }
 }

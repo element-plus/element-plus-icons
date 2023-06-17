@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import { icons } from '@element-plus/icons-vue/global'
+</script>
+
 <template>
   <component :is="Icon" v-for="(Icon, key) in icons" :key="key" class="icon" />
   <hr />
@@ -8,10 +12,6 @@
     class="icon"
   />
 </template>
-
-<script lang="ts" setup>
-import { icons } from '@element-plus/icons-vue/global'
-</script>
 
 <style>
 .icon {

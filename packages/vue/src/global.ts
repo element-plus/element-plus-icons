@@ -1,6 +1,5 @@
+import { type App } from 'vue'
 import * as icons from './components'
-
-import type { App } from 'vue'
 
 export interface InstallOptions {
   /** @default `ElIcon` */

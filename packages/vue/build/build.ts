@@ -1,13 +1,12 @@
 import path from 'node:path'
 import consola from 'consola'
 import chalk from 'chalk'
-import { build } from 'esbuild'
+import { type BuildOptions, type Format, build } from 'esbuild'
 import GlobalsPlugin from 'esbuild-plugin-globals'
 import vue from 'unplugin-vue/esbuild'
 import { emptyDir } from 'fs-extra'
 import { version } from '../package.json'
 import { pathOutput, pathSrc } from './paths'
-import type { BuildOptions, Format } from 'esbuild'
 
 const buildBundle = () => {
   const getBuildOptions = (format: Format) => {

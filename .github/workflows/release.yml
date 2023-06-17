@@ -18,13 +18,11 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
-        with:
-          version: latest
 
       - name: Setup node
         uses: actions/setup-node@v2
         with:
-          node-version: 18
+          node-version: lts/*
           registry-url: https://registry.npmjs.org/
           cache: pnpm
 

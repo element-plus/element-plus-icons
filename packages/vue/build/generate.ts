@@ -10,63 +10,6 @@ import { findWorkspaceDir } from '@pnpm/find-workspace-dir'
 import { findWorkspacePackages } from '@pnpm/find-workspace-packages'
 import { pathComponents } from './paths'
 
-const getSvgFiles = async () => {
-  const pkgs = await findWorkspacePackages(
-    (await findWorkspaceDir(process.cwd()))!
-  )
-  const pkg = pkgs.find(
-    (pkg) => pkg.manifest.name === '@element-plus/icons-svg'
-  )!
-  return glob('*.svg', { cwd: pkg.dir, absolute: true })
-}
-
-const getName = (file: string) => {
-  const filename = path.basename(file).replace('.svg', '')
-  const componentName = camelcase(filename, { pascalCase: true })
-  return {
-    filename,
-    componentName,
-  }
-}
-
-const formatCode = (code: string, parser: BuiltInParserName = 'typescript') =>
-  format(code, {
-    parser,
-    semi: false,
-    singleQuote: true,
-  })
-
-const transformToVueComponent = async (file: string) => {
-  const content = await readFile(file, 'utf-8')
-  const { filename, componentName } = getName(file)
-  const vue = formatCode(
-    `
-<template>
-${content}
-</template>
-<script lang="ts">
-import type { DefineComponent } from 'vue'
-export default ({
-  name: "${componentName}",
-}) as DefineComponent
-</script>`,
-    'vue'
-  )
-  writeFile(path.resolve(pathComponents, `${filename}.vue`), vue, 'utf-8')
-}
-
-const generateEntry = async (files: string[]) => {
-  const code = formatCode(
-    files
-      .map((file) => {
-        const { filename, componentName } = getName(file)
-        return `export { default as ${componentName} } from './${filename}.vue'`
-      })
-      .join('\n')
-  )
-  await writeFile(path.resolve(pathComponents, 'index.ts'), code, 'utf-8')
-}
-
 consola.info(chalk.blue('generating vue components'))
 await ensureDir(pathComponents)
 await emptyDir(pathComponents)
@@ -77,3 +20,61 @@ await Promise.all(files.map((file) => transformToVueComponent(file)))
 
 consola.info(chalk.blue('generating entry file'))
 await generateEntry(files)
+
+async function getSvgFiles() {
+  const pkgs = await findWorkspacePackages(
+    (await findWorkspaceDir(process.cwd()))!,
+  )
+  const pkg = pkgs.find(
+    (pkg) => pkg.manifest.name === '@element-plus/icons-svg',
+  )!
+  return glob('*.svg', { cwd: pkg.dir, absolute: true })
+}
+
+function getName(file: string) {
+  const filename = path.basename(file).replace('.svg', '')
+  const componentName = camelcase(filename, { pascalCase: true })
+  return {
+    filename,
+    componentName,
+  }
+}
+
+function formatCode(code: string, parser: BuiltInParserName = 'typescript') {
+  return format(code, {
+    parser,
+    semi: false,
+    singleQuote: true,
+  })
+}
+
+async function transformToVueComponent(file: string) {
+  const content = await readFile(file, 'utf-8')
+  const { filename, componentName } = getName(file)
+  const vue = await formatCode(
+    `
+<template>
+${content}
+</template>
+<script lang="ts">
+import type { DefineComponent } from 'vue'
+export default ({
+  name: "${componentName}",
+}) as DefineComponent
+</script>`,
+    'vue',
+  )
+  writeFile(path.resolve(pathComponents, `${filename}.vue`), vue, 'utf-8')
+}
+
+async function generateEntry(files: string[]) {
+  const code = await formatCode(
+    files
+      .map((file) => {
+        const { filename, componentName } = getName(file)
+        return `export { default as ${componentName} } from './${filename}.vue'`
+      })
+      .join('\n'),
+  )
+  await writeFile(path.resolve(pathComponents, 'index.ts'), code, 'utf-8')
+}

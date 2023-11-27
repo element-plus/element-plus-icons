@@ -1,5 +1,6 @@
-import { type App } from 'vue'
+/* eslint-disable import/no-default-export */
 import * as icons from './components'
+import type { App } from 'vue'
 
 export interface InstallOptions {
   /** @default `ElIcon` */

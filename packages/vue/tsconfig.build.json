@@ -2,17 +2,17 @@
   "compilerOptions": {
     "composite": true,
     "target": "ES2021",
-    "module": "ESNext",
     "lib": ["ES2021"],
     "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "types": ["node"],
     "strict": true,
     "noImplicitAny": true,
-    "moduleResolution": "bundler",
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["node"],
-    "skipLibCheck": true,
-    "resolveJsonModule": true
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "include": ["build", "package.json"]
 }

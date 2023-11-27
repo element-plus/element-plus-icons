@@ -1,19 +1,19 @@
 {
   "compilerOptions": {
     "target": "es2018",
-    "module": "ESNext",
+    "jsx": "preserve",
     "lib": ["ES2018", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
-    "outDir": "dist",
-    "sourceMap": false,
+    "module": "ESNext",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": [],
     "allowJs": false,
     "strict": true,
     "noUnusedLocals": true,
-    "resolveJsonModule": true,
+    "outDir": "dist",
+    "sourceMap": false,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "types": [],
-    "jsx": "preserve"
+    "esModuleInterop": true
   }
 }

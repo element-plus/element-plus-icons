@@ -46,9 +46,9 @@
       ]
     }
   },
+  "sideEffects": false,
   "unpkg": "dist/index.iife.min.js",
   "jsdelivr": "dist/index.iife.min.js",
-  "sideEffects": false,
   "scripts": {
     "build": "pnpm run build:generate && run-p build:build build:types",
     "build:generate": "tsx build/generate.ts",

@@ -37,7 +37,7 @@ const buildBundle = () => {
       options.plugins!.push(
         GlobalsPlugin({
           vue: 'Vue',
-        })
+        }),
       )
       options.globalName = 'ElementPlusIconsVue'
     } else {

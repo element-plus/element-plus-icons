@@ -21,6 +21,8 @@ const buildBundle = () => {
         vue({
           isProduction: true,
           sourceMap: false,
+          // https://github.com/vuejs/core/issues/5256#issuecomment-1173891407
+          template: { compilerOptions: { hoistStatic: false } },
         }),
       ],
       bundle: true,

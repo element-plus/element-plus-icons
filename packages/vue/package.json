@@ -52,7 +52,7 @@
   "scripts": {
     "build": "pnpm run build:generate && run-p build:build build:types",
     "build:generate": "tsx build/generate.ts",
-    "build:build": "tsx build/build.ts",
+    "build:build": "NODE_ENV=production tsx build/build.ts",
     "build:types": "vue-tsc --declaration --emitDeclarationOnly"
   },
   "peerDependencies": {

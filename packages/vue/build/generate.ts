@@ -56,11 +56,10 @@ async function transformToVueComponent(file: string) {
 <template>
 ${content}
 </template>
-<script lang="ts">
-import type { DefineComponent } from 'vue'
-export default ({
-  name: "${componentName}",
-}) as DefineComponent
+<script lang="ts" setup>
+defineOptions({
+  name: ${JSON.stringify(componentName)}
+})
 </script>`,
     'vue',
   )

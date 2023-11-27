@@ -7,6 +7,26 @@ on:
     branches: [main]
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: pnpm
+
+      - name: Install deps
+        run: pnpm i --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
   test:
     strategy:
       matrix:
@@ -29,9 +49,6 @@ jobs:
 
       - name: Install deps
         run: pnpm i --frozen-lockfile
-
-      - name: Lint
-        run: pnpm lint
 
       - name: Build
         run: pnpm build

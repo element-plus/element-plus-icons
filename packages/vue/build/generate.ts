@@ -1,3 +1,4 @@
+import process from 'node:process'
 import path from 'node:path'
 import { readFile, writeFile } from 'node:fs/promises'
 import { emptyDir, ensureDir } from 'fs-extra'

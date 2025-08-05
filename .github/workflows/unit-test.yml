@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v3.0.0
+      - uses: pnpm/action-setup@v4.1.0
         name: Install pnpm
 
       - uses: actions/setup-node@v4
@@ -22,7 +22,7 @@ jobs:
           cache: pnpm
 
       - name: Install deps
-        run: pnpm i --frozen-lockfile
+        run: pnpm i
 
       - name: Lint
         run: pnpm lint
@@ -31,7 +31,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        node-version: [18, 20]
+        node-version: [20, 22, 24]
       fail-fast: false
 
     runs-on: ${{ matrix.os }}
@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v3.0.0
+      - uses: pnpm/action-setup@v4.1.0
         name: Install pnpm
 
       - uses: actions/setup-node@v4
@@ -48,7 +48,7 @@ jobs:
           cache: pnpm
 
       - name: Install deps
-        run: pnpm i --frozen-lockfile
+        run: pnpm i
 
       - name: Build
         run: pnpm build

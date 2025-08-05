@@ -5,7 +5,7 @@
     "lib": ["ES2018", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "types": [],
     "allowJs": false,
@@ -14,6 +14,7 @@
     "outDir": "dist",
     "sourceMap": false,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true
   }
 }

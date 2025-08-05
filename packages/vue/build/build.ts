@@ -1,10 +1,10 @@
 import path from 'node:path'
-import consola from 'consola'
 import chalk from 'chalk'
-import { type BuildOptions, type Format, build } from 'esbuild'
+import consola from 'consola'
+import { build, type BuildOptions, type Format } from 'esbuild'
 import GlobalsPlugin from 'esbuild-plugin-globals'
-import vue from 'unplugin-vue/esbuild'
 import { emptyDir } from 'fs-extra'
+import vue from 'unplugin-vue/esbuild'
 import { version } from '../package.json'
 import { pathOutput, pathSrc } from './paths'
 

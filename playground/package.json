@@ -11,11 +11,11 @@
   "dependencies": {
     "@element-plus/icons-svg": "workspace:*",
     "@element-plus/icons-vue": "workspace:*",
-    "vue": "^3.4.21"
+    "vue": "^3.5.18"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
-    "typescript": "^5.4.2",
-    "vite": "^5.1.5"
+    "@vitejs/plugin-vue": "^6.0.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.0.6"
   }
 }

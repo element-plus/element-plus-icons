@@ -2,7 +2,7 @@
   "name": "@element-plus/icons-monorepo",
   "version": "2.3.1",
   "private": true,
-  "packageManager": "pnpm@8.15.4",
+  "packageManager": "pnpm@10.14.0",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -14,12 +14,12 @@
     "release": "bumpp -r"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^3.8.6",
-    "@sxzz/prettier-config": "^2.0.1",
-    "bumpp": "^9.4.0",
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.2"
+    "@sxzz/eslint-config": "^7.1.2",
+    "@sxzz/prettier-config": "^2.2.3",
+    "bumpp": "^10.2.2",
+    "eslint": "^9.32.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
   },
   "prettier": "@sxzz/prettier-config"
 }

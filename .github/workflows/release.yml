@@ -40,4 +40,4 @@ jobs:
         run: pnpm run build
 
       - name: Publish
-        run: pnpm publish -r --access public --no-git-checks
+        run: npm i -g npm && pnpm publish -r --access public --no-git-checks

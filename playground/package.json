@@ -1,7 +1,7 @@
 {
   "name": "@element-plus/icons-playground",
-  "private": true,
   "type": "module",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "dev": "vite",
@@ -11,11 +11,11 @@
   "dependencies": {
     "@element-plus/icons-svg": "workspace:*",
     "@element-plus/icons-vue": "workspace:*",
-    "vue": "^3.5.18"
+    "vue": "^3.5.26"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.1",
-    "typescript": "^5.9.2",
-    "vite": "^7.0.6"
+    "@vitejs/plugin-vue": "^6.0.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0"
   }
 }

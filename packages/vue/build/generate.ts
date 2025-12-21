@@ -50,7 +50,7 @@ function formatCode(code: string, parser: BuiltInParserName = 'typescript') {
 }
 
 async function transformToVueComponent(file: string) {
-  const content = await readFile(file, 'utf-8')
+  const content = await readFile(file, 'utf8')
   const { filename, componentName } = getName(file)
   const vue = await formatCode(
     `
@@ -64,7 +64,7 @@ defineOptions({
 </script>`,
     'vue',
   )
-  writeFile(path.resolve(pathComponents, `${filename}.vue`), vue, 'utf-8')
+  writeFile(path.resolve(pathComponents, `${filename}.vue`), vue, 'utf8')
 }
 
 async function generateEntry(files: string[]) {
@@ -76,5 +76,5 @@ async function generateEntry(files: string[]) {
       })
       .join('\n'),
   )
-  await writeFile(path.resolve(pathComponents, 'index.ts'), code, 'utf-8')
+  await writeFile(path.resolve(pathComponents, 'index.ts'), code, 'utf8')
 }

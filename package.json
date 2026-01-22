@@ -10,6 +10,7 @@
     "build": "pnpm run -C ./packages/vue build",
     "lint": "eslint .",
     "lint:fix": "pnpm run lint --fix",
+    "typecheck": "vue-tsc --noEmit",
     "format": "prettier --write . && pnpm run -C ./packages/svg optimize",
     "release": "bumpp -r"
   },
@@ -19,7 +20,8 @@
     "bumpp": "^10.4.0",
     "eslint": "^9.39.2",
     "prettier": "^3.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.2.2"
   },
   "prettier": "@sxzz/prettier-config"
 }

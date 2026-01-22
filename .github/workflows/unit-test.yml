@@ -6,49 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+permissions: {}
+
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: pnpm/action-setup@v4.1.0
-        name: Install pnpm
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          cache: pnpm
-
-      - name: Install deps
-        run: pnpm i
-
-      - name: Lint
-        run: pnpm lint
-
-  test:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-        node-version: [20, 22, 24]
-      fail-fast: false
-
-    runs-on: ${{ matrix.os }}
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: pnpm/action-setup@v4.1.0
-        name: Install pnpm
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: pnpm
-
-      - name: Install deps
-        run: pnpm i
-
-      - name: Build
-        run: pnpm build
+  unit-test:
+    uses: sxzz/workflows/.github/workflows/unit-test.yml@v1
+    with:
+      skip-test: true
+      build-for-lint: true

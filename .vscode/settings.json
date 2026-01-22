@@ -2,6 +2,5 @@
   "editor.formatOnSave": true,
   "[xml]": {
     "editor.formatOnSave": false
-  },
-  "eslint.experimental.useFlatConfig": true
+  }
 }

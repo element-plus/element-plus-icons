@@ -1,3 +1,3 @@
 import { sxzz } from '@sxzz/eslint-config'
 
-export default sxzz([{ ignores: ['.prettierrc'] }])
+export default sxzz()

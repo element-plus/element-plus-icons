@@ -5,5 +5,5 @@ packages:
 allowBuilds:
   esbuild: false
 
-trustPolicy: no-downgrade
 ignoreWorkspaceRootCheck: true
+trustPolicy: no-downgrade

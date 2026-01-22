@@ -1,39 +1,35 @@
-import { readFile, writeFile } from 'node:fs/promises'
-import path from 'node:path'
-import process from 'node:process'
-import { findWorkspaceDir } from '@pnpm/find-workspace-dir'
-import { findWorkspacePackages } from '@pnpm/find-workspace-packages'
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
+import { basename, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import camelcase from 'camelcase'
-import chalk from 'chalk'
 import consola from 'consola'
-import glob from 'fast-glob'
-import { emptyDir, ensureDir } from 'fs-extra'
 import { format, type BuiltInParserName } from 'prettier'
-import { pathComponents } from './paths'
+import { glob } from 'tinyglobby'
 
-consola.info(chalk.blue('generating vue components'))
-await ensureDir(pathComponents)
-await emptyDir(pathComponents)
+consola.info('generating vue components')
+const pathComponents = resolve(import.meta.dirname, '../src/components')
+await rm(pathComponents, { recursive: true, force: true })
+await mkdir(pathComponents, { recursive: true })
 const files = await getSvgFiles()
 
-consola.info(chalk.blue('generating vue files'))
+consola.info('generating vue files')
 await Promise.all(files.map((file) => transformToVueComponent(file)))
 
-consola.info(chalk.blue('generating entry file'))
+consola.info('generating entry file')
 await generateEntry(files)
 
-async function getSvgFiles() {
-  const pkgs = await findWorkspacePackages(
-    (await findWorkspaceDir(process.cwd()))!,
+function getSvgFiles() {
+  const svgPackageJson = fileURLToPath(
+    import.meta.resolve('@element-plus/icons-svg/package.json'),
   )
-  const pkg = pkgs.find(
-    (pkg) => pkg.manifest.name === '@element-plus/icons-svg',
-  )!
-  return glob('*.svg', { cwd: pkg.dir, absolute: true })
+  return glob('*.svg', {
+    cwd: resolve(svgPackageJson, '..'),
+    absolute: true,
+  })
 }
 
 function getName(file: string) {
-  const filename = path.basename(file).replace('.svg', '')
+  const filename = basename(file).replace('.svg', '')
   const componentName = camelcase(filename, { pascalCase: true })
   return {
     filename,
@@ -64,7 +60,7 @@ defineOptions({
 </script>`,
     'vue',
   )
-  writeFile(path.resolve(pathComponents, `${filename}.vue`), vue, 'utf8')
+  writeFile(resolve(pathComponents, `${filename}.vue`), vue, 'utf8')
 }
 
 async function generateEntry(files: string[]) {
@@ -76,5 +72,5 @@ async function generateEntry(files: string[]) {
       })
       .join('\n'),
   )
-  await writeFile(path.resolve(pathComponents, 'index.ts'), code, 'utf8')
+  await writeFile(resolve(pathComponents, 'index.ts'), code, 'utf8')
 }

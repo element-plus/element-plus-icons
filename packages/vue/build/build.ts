@@ -1,12 +1,13 @@
+import { rm } from 'node:fs/promises'
 import path from 'node:path'
-import chalk from 'chalk'
 import consola from 'consola'
 import { build, type BuildOptions, type Format } from 'esbuild'
 import GlobalsPlugin from 'esbuild-plugin-globals'
-import { emptyDir } from 'fs-extra'
 import vue from 'unplugin-vue/esbuild'
 import { version } from '../package.json'
-import { pathOutput, pathSrc } from './paths'
+
+const pathSrc = path.resolve(import.meta.dirname, '../src')
+const pathOutput = path.resolve(import.meta.dirname, '../dist')
 
 const buildBundle = () => {
   const getBuildOptions = (format: Format) => {
@@ -70,7 +71,7 @@ const buildBundle = () => {
   return Promise.all([doBuild(true), doBuild(false)])
 }
 
-consola.info(chalk.blue('cleaning dist...'))
-await emptyDir(pathOutput)
-consola.info(chalk.blue('building...'))
+consola.info('cleaning dist...')
+await rm(pathOutput, { recursive: true, force: true })
+consola.info('building...')
 await buildBundle()
